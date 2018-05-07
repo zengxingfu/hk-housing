@@ -1,7 +1,7 @@
 
 node_modules/
 yarn-error.log
-dist/
+dev/
 .cache/
 src/assets/.DS_Store
 .DS_Store
