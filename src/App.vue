@@ -7,32 +7,40 @@
 			<header class="mdl-layout__header">
 				<div class="mdl-layout__header-row">
 				<!-- Title -->
-				<span class="mdl-layout-title">香港公屋</span>
+				<span class="mdl-layout-title"><router-link class="white" to="/">香港公屋</router-link></span>
 				<!-- Add spacer, to align navigation to the right -->
 				<div class="mdl-layout-spacer"></div>
 				<!-- Navigation. We hide it in small screens. -->
 				<nav class="mdl-navigation mdl-layout--large-screen-only">
-					<a class="mdl-navigation__link" href="">政策</a>
-					<a class="mdl-navigation__link" href="">民众与媒体关注</a>
-					<a class="mdl-navigation__link" href="">人居</a>
-					<a class="mdl-navigation__link" href="">Mapping</a>
+					<router-link class="mdl-navigation__link" to="policy">政策</router-link>
+					<router-link class="mdl-navigation__link" to="attenion">民众与媒体关注</router-link>
+					<router-link class="mdl-navigation__link" to="live">人居</router-link>
+					<router-link class="mdl-navigation__link" to="mapping">Mapping</router-link>
+					<!-- <a class="mdl-navigation__link" href="">政策</a> -->
 				</nav>
 				</div>
 			</header>
 			<div class="mdl-layout__drawer">
-				<span class="mdl-layout-title">香港公屋</span>
+				<span class="mdl-layout-title"><router-link to="/">香港公屋</router-link></span>
 				<nav class="mdl-navigation">
-				<a class="mdl-navigation__link" href="">政策</a>
-				<a class="mdl-navigation__link" href="">民众与媒体关注</a>
-				<a class="mdl-navigation__link" href="">人居</a>
-				<a class="mdl-navigation__link" href="">Mapping</a>
+					<router-link class="mdl-navigation__link" to="policy">政策</router-link>
+					<router-link class="mdl-navigation__link" to="attenion">民众与媒体关注</router-link>
+					<router-link class="mdl-navigation__link" to="live">人居</router-link>
+					<router-link class="mdl-navigation__link" to="mapping">Mapping</router-link>
 				</nav>
 			</div>
 			<main class="mdl-layout__content">
-				<div class="page-content"><!-- Your content goes here --></div>
+				<div class="page-content">
+					<!-- Your content goes here -->
+					<router-view></router-view>
+				</div>
 			</main>
+			<footer class="mdl-mini-footer">
+			
+			</footer>
 			</div>
 		</div>
+		
 	</div>
 </template>
 
@@ -41,7 +49,7 @@
 export default {
   data() {
     return {
-        // msg: "hk"
+      // msg: "hk"
     };
   },
   components: {
@@ -51,4 +59,15 @@ export default {
 </script>
 
 <style scoped>
+.mdl-layout-title a {
+  text-decoration: none;
+  color: black;
+}
+.mdl-layout-title a.white {
+  color: white;
+}
+.page {
+  margin: 50px;
+  text-align: center;
+}
 </style>
