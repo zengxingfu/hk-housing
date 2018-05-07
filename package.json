@@ -1,0 +1,20 @@
+{
+  "name": "hk2018",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url ./"
+  },
+  "dependencies": {
+    "vue": "^2.5.0",
+    "vue-hot-reload-api": "^2.3.0"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^1.2.1",
+    "babel-preset-env": "^1.6.1",
+    "parcel-bundler": "^1.8.1",
+    "vue-template-compiler": "^2.5.16"
+  }
+}
