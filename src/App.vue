@@ -36,7 +36,15 @@
 				</div>
 			</main>
 			<footer class="mdl-mini-footer">
-			
+				<div class="last-next">
+					<!-- <ImageCard></ImageCard> -->
+					<button id="goto-last" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+						← 上一篇
+					</button>
+					<button id="goto-next" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+						下一篇 →
+					</button>
+				</div>
 			</footer>
 			</div>
 		</div>
@@ -46,15 +54,21 @@
 
 <script>
 // import Navbar from './components/Navbar.vue'
+import ImageCard from "./components/ImageCard.vue";
 export default {
   data() {
     return {
       // msg: "hk"
+      // currentPage: ""
+      isFisrt: true,
+      isLast: false
     };
   },
   components: {
     // Navbar: Navbar
-  }
+    ImageCard: ImageCard
+  },
+  methods: {}
 };
 </script>
 
@@ -66,8 +80,22 @@ export default {
 .mdl-layout-title a.white {
   color: white;
 }
+main {
+  background-color: #efefef;
+}
 .page {
-  margin: 50px;
-  text-align: center;
+  margin: 50px auto;
+  width: 1024px;
+}
+
+.last-next {
+  width: 1024px;
+  margin: 0 auto;
+}
+#goto-last {
+  float: left;
+}
+#goto-next {
+  float: right;
 }
 </style>

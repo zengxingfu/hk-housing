@@ -8,6 +8,8 @@
 export default {};
 </script>
 
-<style scoped>
-
+<style>
+.page > img {
+  width: 1024px;
+}
 </style>
