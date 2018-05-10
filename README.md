@@ -4,5 +4,6 @@
 
 ## TODO
 
-- [x] add vue-router config
-- [ ] bottom navigation
+- [x] Add vue-router config
+- [ ] Bottom navigation
+- [ ] Mapping optimizing

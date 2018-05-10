@@ -12,10 +12,14 @@
 				<div class="mdl-layout-spacer"></div>
 				<!-- Navigation. We hide it in small screens. -->
 				<nav class="mdl-navigation mdl-layout--large-screen-only">
+					<router-link class="mdl-navigation__link" to="/">公屋概况</router-link>
 					<router-link class="mdl-navigation__link" to="policy">政策</router-link>
 					<router-link class="mdl-navigation__link" to="attenion">民众与媒体关注</router-link>
 					<router-link class="mdl-navigation__link" to="live">人居</router-link>
-					<router-link class="mdl-navigation__link" to="mapping">Mapping</router-link>
+					<!-- <router-link class="mdl-navigation__link" to="mapping">公屋地图</router-link> -->
+					<button v-on:click="openMap()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+						公屋地图
+					</button>
 					<!-- <a class="mdl-navigation__link" href="">政策</a> -->
 				</nav>
 				</div>
@@ -23,10 +27,11 @@
 			<div class="mdl-layout__drawer">
 				<span class="mdl-layout-title"><router-link to="/">香港公屋</router-link></span>
 				<nav class="mdl-navigation">
+					<router-link class="mdl-navigation__link" to="/">公屋概况</router-link>
 					<router-link class="mdl-navigation__link" to="policy">政策</router-link>
 					<router-link class="mdl-navigation__link" to="attenion">民众与媒体关注</router-link>
 					<router-link class="mdl-navigation__link" to="live">人居</router-link>
-					<router-link class="mdl-navigation__link" to="mapping">Mapping</router-link>
+					<!-- <router-link class="mdl-navigation__link" to="mapping">公屋地图</router-link> -->
 				</nav>
 			</div>
 			<main class="mdl-layout__content">
@@ -34,15 +39,16 @@
 					<!-- Your content goes here -->
 					<router-view></router-view>
 				</div>
+				<Map ref="mapping"></Map>
 			</main>
 			<footer class="mdl-mini-footer">
 				<div class="last-next">
 					<!-- <ImageCard></ImageCard> -->
 					<button id="goto-last" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
-						← 上一篇
+						<i class="material-icons">chevron_left</i> 上一篇
 					</button>
 					<button id="goto-next" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
-						下一篇 →
+						下一篇 <i class="material-icons">chevron_right</i>
 					</button>
 				</div>
 			</footer>
@@ -53,8 +59,8 @@
 </template>
 
 <script>
-// import Navbar from './components/Navbar.vue'
 import ImageCard from "./components/ImageCard.vue";
+import Map from "./components/Map.vue";
 export default {
   data() {
     return {
@@ -64,11 +70,18 @@ export default {
       isLast: false
     };
   },
+  created: function() {},
   components: {
     // Navbar: Navbar
-    ImageCard: ImageCard
+    ImageCard,
+    Map
   },
-  methods: {}
+  methods: {
+    openMap() {
+      let vm = this;
+      this.$refs.mapping.open();
+    }
+  }
 };
 </script>
 
