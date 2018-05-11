@@ -1,7 +1,9 @@
 <template>
  <dialog class="mdl-dialog">
     <!-- <h4 class="mdl-dialog__title">公屋地图</h4> -->
-    <div id="hk-mapping" class="mdl-dialog__content"></div>
+    <div id="hk-mapping" class="mdl-dialog__content">
+      <!-- <iframe src="http://lbs.amap.com/dev/mapdata/share/8510d74a40bbd8ac1ab101d6816681e8" frameborder="0"></iframe> -->
+    </div>
     <div class="mdl-dialog__actions">
       <button @click="close" type="button" class="mdl-button close">关闭</button>
     </div>
@@ -12,6 +14,12 @@
 export default {
   data() {
     return {};
+  },
+  created() {
+    let vm = this;
+    vm.bus.$on("openMap&sTop", function(val) {
+      vm.open();
+    });
   },
   computed: {
     dialog() {
@@ -43,11 +51,18 @@ export default {
 
 <style scoped>
 dialog {
-  width: 1024px;
+  width: 1200px;
   padding: 0;
 }
+/* #hk-mapping {
+  padding: 0;
+}
+#hk-mapping iframe {
+  width: 1200px;
+  height: 480px;
+} */
 #hk-mapping {
-  width: 976px;
+  width: 1152px;
   height: 480px;
 }
 </style>

@@ -8,6 +8,7 @@
     "build": "parcel build index.html --public-url ./"
   },
   "dependencies": {
+    "echarts": "^4.1.0",
     "vue": "^2.5.0",
     "vue-hot-reload-api": "^2.3.0",
     "vue-router": "^3.0.1"

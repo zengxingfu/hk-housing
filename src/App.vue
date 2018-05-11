@@ -18,7 +18,7 @@
 										<router-link class="mdl-navigation__link" to="live">人居</router-link>
 										<!-- <router-link class="mdl-navigation__link" to="mapping">公屋地图</router-link> -->
 										<button v-on:click="openMap()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-												公屋地图
+												<i class="material-icons">place</i>公屋地图
 										</button>
 										<!-- <a class="mdl-navigation__link" href="">政策</a> -->
 								</nav>
@@ -87,7 +87,13 @@ export default {
       return path.nextPath(this);
     }
   },
-  created: function() {},
+  created: function() {
+    let vm = this;
+    vm.bus.$on("openMap&sTop", val => {
+      let sTop = document.body || document.documentElement;
+      sTop.scrollTop = 0;
+    });
+  },
   mounted() {},
   components: {
     // Navbar: Navbar
