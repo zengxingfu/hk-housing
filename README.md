@@ -4,8 +4,8 @@
 
 ## TODO
 
-- [x] Add vue-router config
-- [x] Bottom navigation
-- [ ] Mapping optimizing
-- [ ] Chart component
-- [ ] Video component
+* [x] Add vue-router config
+* [x] Bottom navigation
+* [ ] Mapping optimizing
+* [x] Chart component
+* [x] Video component

@@ -1,24 +1,25 @@
 <template>
-<div class="video-card-event mdl-card mdl-shadow--2dp">
-  <!-- <div class="mdl-card__title mdl-card--expand">
+  <div class="video-card-event mdl-card mdl-shadow--2dp">
+    <!-- <div class="mdl-card__title mdl-card--expand">
     <h4>
         公屋视频
     </h4>
   </div> -->
-  <div class="video-container">
-      <video src="http://acvideo-1252754384.cossh.myqcloud.com/ac_13354_480p_v1.mp4" controls="controls">
-Your browser does not support the video tag.
-</video>
-  </div>
-  
-  <!-- <div class="mdl-card__actions mdl-card--border">
+    <div class="video-container">
+      <video class="video-js vjs-big-play-centered" data-setup='{"controls": true, "autoplay": false, "preload": "auto"}'>
+        <source src="http://acvideo-1252754384.cossh.myqcloud.com/ac_13354_480p_v1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- <div class="mdl-card__actions mdl-card--border">
     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
       Action Button
     </a>
     <div class="mdl-layout-spacer"></div>
     <i class="material-icons">event</i>
   </div> -->
-</div>
+  </div>
 </template>
 
 <script>
@@ -49,7 +50,7 @@ export default {};
 .video-card-event > .mdl-card__actions > .material-icons {
   padding-right: 10px;
 }
-.video-container video {
-  width: 100%;
+.video-js.vjs-big-play-centered {
+  width: 100% !important;
 }
 </style>

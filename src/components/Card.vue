@@ -25,7 +25,7 @@ export default {
 <style scoped>
 .demo-card-wide.mdl-card {
   margin: 25px 0;
-  width: 1024px;
+  width: 100%;
   background: url("https://ws4.sinaimg.cn/large/006tNc79ly1fr7bz1cc5yj30u00lgq7o.jpg")
     center / cover;
 }
