@@ -20,9 +20,7 @@ import Card from "../components/Card";
 import Chart from "../components/Chart";
 import Video from "../components/Video";
 export default {
-  mounted() {
-    videojs(document.querySelector(".video-js"));
-  },
+  mounted() {},
   components: {
     Card,
     Chart,

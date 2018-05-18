@@ -6,7 +6,11 @@
     </h4>
   </div> -->
     <div class="video-container">
-      <video class="video-js vjs-big-play-centered" data-setup='{"controls": true, "autoplay": false, "preload": "auto"}'>
+      <!-- <video class="video-js vjs-big-play-centered" data-setup='{"controls": true, "autoplay": false, "preload": "auto"}'>
+        <source src="http://acvideo-1252754384.cossh.myqcloud.com/ac_13354_480p_v1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>   -->
+      <video controls>
         <source src="http://acvideo-1252754384.cossh.myqcloud.com/ac_13354_480p_v1.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
@@ -28,6 +32,13 @@ export default {};
 
 <style scoped>
 .video-card-event.mdl-card {
+  margin: 0 0 25px 0;
+  width: 100%;
+}
+.video-container video {
+  width: 100%;
+}
+/* .video-card-event.mdl-card {
   margin: 25px 0;
   width: 100%;
   height: auto;
@@ -52,5 +63,5 @@ export default {};
 }
 .video-js.vjs-big-play-centered {
   width: 100% !important;
-}
+} */
 </style>

@@ -3,6 +3,7 @@
     <!-- <h4 class="mdl-dialog__title">公屋地图</h4> -->
     <div id="hk-mapping" class="mdl-dialog__content">
       <!-- <iframe src="http://lbs.amap.com/dev/mapdata/share/8510d74a40bbd8ac1ab101d6816681e8" frameborder="0"></iframe> -->
+      <iframe src="http://lbs.amap.com/dev/mapdata/share/82ed89bf82eee5173a32605e761c507f" frameborder="0"></iframe>
     </div>
     <div class="mdl-dialog__actions">
       <button @click="close" type="button" class="mdl-button close">关闭</button>
@@ -31,12 +32,12 @@ export default {
     }
   },
   mounted() {
-    var map = new AMap.Map("hk-mapping", {
-      mapStyle: "amap://styles/whitesmoke",
-      resizeEnable: true,
-      zoom: 12,
-      center: [114.1779899597, 22.2901288435]
-    });
+    // var map = new AMap.Map("hk-mapping", {
+    //   mapStyle: "amap://styles/whitesmoke",
+    //   resizeEnable: true,
+    //   zoom: 12,
+    //   center: [114.1779899597, 22.2901288435]
+    // });
   },
   methods: {
     open() {
@@ -54,13 +55,13 @@ dialog {
   width: 1200px;
   padding: 0;
 }
-/* #hk-mapping {
+#hk-mapping {
   padding: 0;
 }
 #hk-mapping iframe {
   width: 1200px;
   height: 480px;
-} */
+}
 #hk-mapping {
   width: 1152px;
   height: 480px;
