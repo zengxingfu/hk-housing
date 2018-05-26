@@ -14,15 +14,36 @@
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation. We hide it in small screens. -->
             <nav class="mdl-navigation mdl-layout--large-screen-only">
-              <router-link class="mdl-navigation__link" to="/">公屋概况</router-link>
-              <router-link class="mdl-navigation__link" to="policy">政策</router-link>
-              <router-link class="mdl-navigation__link" to="attention">民众与媒体关注</router-link>
-              <router-link class="mdl-navigation__link" to="live">人居</router-link>
-              <!-- <router-link class="mdl-navigation__link" to="mapping">公屋地图</router-link> -->
-              <button v-on:click="openMap()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                <i class="material-icons">place</i>公屋地图
-              </button>
-              <!-- <a class="mdl-navigation__link" href="">政策</a> -->
+              <router-link class="mdl-navigation__link" to="/">
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect text-white">
+                  漩涡中的香港住房问题
+                </button>
+              </router-link>
+              <router-link class="mdl-navigation__link" to="live">
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect text-white">
+                  公屋与居民
+                </button>
+              </router-link>
+              <router-link class="mdl-navigation__link" to="supply">
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect text-white">
+                  公屋供需
+                </button>
+              </router-link>
+              <router-link class="mdl-navigation__link" to="environment">
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect text-white">
+                  居住环境
+                </button>
+              </router-link>
+              <router-link class="mdl-navigation__link" to="policy">
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect text-white">
+                  政策迷思
+                </button>
+              </router-link>
+              <router-link class="mdl-navigation__link" to="mapping">
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect text-white">
+                  公屋地图
+                </button>
+              </router-link>
             </nav>
           </div>
         </header>
@@ -31,22 +52,25 @@
             <router-link to="/">香港公屋</router-link>
           </span>
           <nav class="mdl-navigation">
-            <router-link class="mdl-navigation__link" to="/">公屋概况</router-link>
-            <router-link class="mdl-navigation__link" to="policy">政策</router-link>
-            <router-link class="mdl-navigation__link" to="attention">民众与媒体关注</router-link>
-            <router-link class="mdl-navigation__link" to="live">人居</router-link>
-            <!-- <router-link class="mdl-navigation__link" to="mapping">公屋地图</router-link> -->
+            <router-link class="mdl-navigation__link" to="/">漩涡中的香港住房问题</router-link>
+            <router-link class="mdl-navigation__link" to="live">公屋与居民</router-link>
+            <router-link class="mdl-navigation__link" to="supply">公屋供需</router-link>
+            <router-link class="mdl-navigation__link" to="environment">居住环境</router-link>
+            <router-link class="mdl-navigation__link" to="policy">政策迷思</router-link>
+            <router-link class="mdl-navigation__link" to="mapping">公屋地图</router-link>
           </nav>
         </div>
         <main class="mdl-layout__content">
           <div class="mdl-grid page-container">
             <!-- Your content goes here -->
-            <router-view></router-view>
-
+            <!-- <transition name="slide"> -->
+            <transition mode="out-in">
+              <router-view></router-view>
+            </transition>
+            
           </div>
-          <div id="footer-nav">
+          <!-- <div id="footer-nav">
             <div class="mdl-cell--7-col last-next">
-              <!-- <ImageCard></ImageCard> -->
               <button @click="goLast" v-if="isFirst" disabled id="goto-last" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
                 <i class="material-icons">chevron_left</i> 上一篇
               </button>
@@ -62,7 +86,7 @@
                 <i class="material-icons">chevron_right</i>
               </button>
             </div>
-          </div>
+          </div> -->
           <Map ref="mapping"></Map>
         </main>
 
@@ -161,5 +185,25 @@ main {
   height: 36px;
   padding: 16px 0;
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* 过渡动画 */
+.v-enter {
+  opacity: 0.75;
+}
+.v-enter-active {
+  transition: 0.25s;
+}
+.v-enter-to {
+  opacity: 1;
+}
+.v-leave {
+  opacity: 1;
+}
+.v-leave-to {
+  opacity: 0.75;
+}
+.v-leave-active {
+  transition: 0.25s;
 }
 </style>

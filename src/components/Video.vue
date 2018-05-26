@@ -38,30 +38,4 @@ export default {};
 .video-container video {
   width: 100%;
 }
-/* .video-card-event.mdl-card {
-  margin: 25px 0;
-  width: 100%;
-  height: auto;
-  background: white;
-}
-.video-card-event > .mdl-card__actions {
-  border-color: rgba(0, 0, 0, 0.1);
-}
-.video-card-event > .mdl-card__title {
-  align-items: flex-start;
-}
-.video-card-event > .mdl-card__title > h4 {
-  margin-top: 0;
-}
-.video-card-event > .mdl-card__actions {
-  display: flex;
-  box-sizing: border-box;
-  align-items: center;
-}
-.video-card-event > .mdl-card__actions > .material-icons {
-  padding-right: 10px;
-}
-.video-js.vjs-big-play-centered {
-  width: 100% !important;
-} */
 </style>

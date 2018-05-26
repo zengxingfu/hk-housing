@@ -3,8 +3,9 @@ import VueRouter from "vue-router";
 import Policy from "./pages/Policy.vue";
 import Live from "./pages/Live.vue";
 import Mapping from "./pages/Mapping.vue";
-import Attention from "./pages/Attention.vue";
+import Environment from "./pages/Environment.vue";
 import Overview from "./pages/Overview";
+import Supply from "./pages/Supply";
 
 Vue.use(VueRouter);
 
@@ -23,12 +24,16 @@ const router = new VueRouter({
       component: Live
     },
     {
-      path: "/attention",
-      component: Attention
+      path: "/environment",
+      component: Environment
     },
     {
       path: "/mapping",
       component: Mapping
+    },
+    {
+      path: "/supply",
+      component: Supply
     }
   ]
 });
