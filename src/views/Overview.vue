@@ -4,9 +4,9 @@
         <TextUnit title="施老师说这里有一个卷首语" subtitle="卷首语的副标题" content="啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"></TextUnit>
         <ImageCard></ImageCard>
         <TextUnit title="施老师说这里有一个媒体报道" subtitle="媒体报道的副标题" content="啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"></TextUnit>
-        <Chart class="bottom-gap" chartId="yahaha"></Chart>
+        <Chart class="bottom-gap" chartId="polling"></Chart>
         <TextUnit2 title="施老师说这里有一个文案占位" subtitle="文案占位的副标题" content="啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"></TextUnit2>
-        <Chart class="bottom-gap top-gap" chartId="ohoho"></Chart>
+        <Chart class="bottom-gap top-gap" chartId="report"></Chart>
         <Chart class="bottom-gap top-gap" chartId="ihihi"></Chart>
         <ImageCard class="bottom-gap"></ImageCard>
         <BottomNav lastChapter="" nextChapter="公屋与居民" nextPath="live" lastPath=""></BottomNav>
