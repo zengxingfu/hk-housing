@@ -1,26 +1,23 @@
 <template>
-    <div>
-        <div class="top-img" v-bind:class="background">
-            <div class="mask">
-                <h1>{{ title }}</h1>
-                <!-- <h4>“杰瑞德·莱托 奥斯卡”(jared leto oscar) 的搜索量在今年出现 28 倍的飙升，而他的 Instagram 帐户所获得的搜索量涨幅更高。</h4> -->
-            </div>
+    <div v-bind:class="background" class="top-image">
+        <div class="mask">
+            <h1>{{title}}</h1>
         </div>
     </div>
 </template>
 
 <script>
 export default {
+  name: "TopImage",
   props: ["title", "background"]
 };
 </script>
 
 <style scoped>
-.top-img {
+.top-image {
   width: 100%;
-  height: 576px;
+  height: 480px;
 }
-
 .top-1 {
   background: url(http://ww1.sinaimg.cn/large/005AlemFly1frp9qyaug9j30zk0dwn00.jpg)
     center / contain;
@@ -45,8 +42,7 @@ export default {
   background: url(http://ww1.sinaimg.cn/large/005AlemFly1frpamsjznvj30zk0dwq5g.jpg)
     center / cover;
 }
-
-.top-img > .mask {
+.top-image > .mask {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
@@ -56,19 +52,9 @@ export default {
   justify-content: center;
   align-items: center;
 }
-.top-img > .mask > h1 {
+.top-image > .mask > h1 {
   color: white;
-  font-size: 55px;
+  /* font-size: 55px; */
   font-weight: 300;
-}
-.top-img > .mask > h4 {
-  color: white;
-  font-size: 24px;
-  padding-top: 1em;
-  padding-left: 20%;
-  /* padding-left: 18.75%; */
-  padding-right: 20%;
-  text-align: center;
-  line-height: 1.4;
 }
 </style>

@@ -1,198 +1,141 @@
 <template>
-  <div>
-    <!-- 导航 -->
-    <div id="hk-nav">
-      <!-- Always shows a header, even in smaller screens. -->
-      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header">
-          <div class="mdl-layout__header-row">
-            <!-- Title -->
-            <span class="mdl-layout-title">
-              <router-link class="white" to="/">香港公屋</router-link>
-            </span>
-            <!-- Add spacer, to align navigation to the right -->
-            <div class="mdl-layout-spacer"></div>
-            <!-- Navigation. We hide it in small screens. -->
-            <nav class="mdl-navigation mdl-layout--large-screen-only">
-              <router-link class="mdl-navigation__link" to="/">
-                <button class="mdl-button mdl-js-button mdl-js-ripple-effect text-white">
-                  漩涡中的香港住房问题
-                </button>
-              </router-link>
-              <router-link class="mdl-navigation__link" to="live">
-                <button class="mdl-button mdl-js-button mdl-js-ripple-effect text-white">
-                  公屋与居民
-                </button>
-              </router-link>
-              <router-link class="mdl-navigation__link" to="supply">
-                <button class="mdl-button mdl-js-button mdl-js-ripple-effect text-white">
-                  公屋供需
-                </button>
-              </router-link>
-              <router-link class="mdl-navigation__link" to="environment">
-                <button class="mdl-button mdl-js-button mdl-js-ripple-effect text-white">
-                  居住环境
-                </button>
-              </router-link>
-              <router-link class="mdl-navigation__link" to="policy">
-                <button class="mdl-button mdl-js-button mdl-js-ripple-effect text-white">
-                  政策迷思
-                </button>
-              </router-link>
-              <router-link class="mdl-navigation__link" to="mapping">
-                <button class="mdl-button mdl-js-button mdl-js-ripple-effect text-white">
-                  公屋地图
-                </button>
-              </router-link>
-            </nav>
+<div class="page-container">
+    <md-app md-waterfall md-mode="fixed-last">
+      <md-app-toolbar class="md-large md-dense md-primary">
+        <div class="md-toolbar-row">
+          <div class="md-toolbar-section-start">
+            <md-button class="md-icon-button" @click="menuVisible = !menuVisible">
+              <md-icon>bookmark</md-icon>
+            </md-button>
+            <span class="md-title">香港公屋问题研究</span>
           </div>
-        </header>
-        <div class="mdl-layout__drawer">
-          <span class="mdl-layout-title">
-            <router-link to="/">香港公屋</router-link>
-          </span>
-          <nav class="mdl-navigation">
-            <router-link class="mdl-navigation__link" to="/">漩涡中的香港住房问题</router-link>
-            <router-link class="mdl-navigation__link" to="live">公屋与居民</router-link>
-            <router-link class="mdl-navigation__link" to="supply">公屋供需</router-link>
-            <router-link class="mdl-navigation__link" to="environment">居住环境</router-link>
-            <router-link class="mdl-navigation__link" to="policy">政策迷思</router-link>
-            <router-link class="mdl-navigation__link" to="mapping">公屋地图</router-link>
-          </nav>
+
+          <div class="md-toolbar-section-end">
+            <md-button class="md-icon-button">
+              <md-icon>share</md-icon>
+            </md-button>
+          </div>
         </div>
-        <main class="mdl-layout__content">
-          <div class="mdl-grid page-container">
-            <!-- Your content goes here -->
-            <!-- <transition name="slide"> -->
-            <transition mode="out-in">
-              <router-view></router-view>
-            </transition>
+
+        <div class="md-toolbar-row">
+              <md-tabs class="md-primary" md-sync-route>
+                <md-tab id="tab-overview" md-label="香港住房问题" to="/overview"></md-tab>
+                <md-tab id="tab-live" md-label="公屋与居民" to="/live"></md-tab>
+                <md-tab id="tab-supply" md-label="公屋供需" to="/supply"></md-tab>
+                <md-tab id="tab-environment" md-label="居住环境" to="/environment"></md-tab>
+                <md-tab id="tab-policy" md-label="政策迷思" to="/policy"></md-tab>
+                <md-tab id="tab-mapping" md-label="公屋地图" to="/mapping"></md-tab>
+              </md-tabs>
+          <!-- <md-tabs class="md-primary" md-sync-route>
+            <md-tab id="tab-overview" md-label="香港住房问题" to="/"></md-tab>
+            <md-tab id="tab-live" md-label="公屋与居民" to=""></md-tab>
+            <md-tab id="tab-supply" md-label="公屋供需" to="supply"></md-tab>
+            <md-tab id="tab-environment" md-label="居住环境"></md-tab>
+            <md-tab id="tab-policy" md-label="政策迷思"></md-tab>
+            <md-tab id="tab-mapping" md-label="公屋地图"></md-tab>
+          </md-tabs> -->
+        </div>
+      </md-app-toolbar>
+
+      <!-- <md-app-drawer :md-active.sync="menuVisible">
+        <md-toolbar class="md-transparent" md-elevation="0">香港公屋问题研究</md-toolbar>
+
+        <md-list>
+          <md-list-item>
+            <md-icon>move_to_inbox</md-icon>
+           <span class="md-list-item-text">Inbox</span>
             
-          </div>
-          <!-- <div id="footer-nav">
-            <div class="mdl-cell--7-col last-next">
-              <button @click="goLast" v-if="isFirst" disabled id="goto-last" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
-                <i class="material-icons">chevron_left</i> 上一篇
-              </button>
-              <button @click="goLast" v-else id="goto-last" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
-                <i class="material-icons">chevron_left</i> 上一篇
-              </button>
-              <button @click="goNext" v-if="isLast" disabled id="goto-next" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
-                下一篇
-                <i class="material-icons">chevron_right</i>
-              </button>
-              <button @click="goNext" v-else id="goto-next" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
-                下一篇
-                <i class="material-icons">chevron_right</i>
-              </button>
-            </div>
-          </div> -->
-          <Map ref="mapping"></Map>
-        </main>
+          </md-list-item>
 
-      </div>
-    </div>
+          <md-list-item>
+            <md-icon>send</md-icon>
+            <span class="md-list-item-text">Sent Mail</span>
+          </md-list-item>
 
+          <md-list-item>
+            <md-icon>delete</md-icon>
+            <span class="md-list-item-text">Trash</span>
+          </md-list-item>
+
+          <md-list-item>
+            <md-icon>error</md-icon>
+            <span class="md-list-item-text">Spam</span>
+          </md-list-item>
+        </md-list>
+      </md-app-drawer> -->
+
+      <md-app-content class="view-container">
+        <transition mode="out-in">
+          <router-view></router-view>
+        </transition>
+      </md-app-content>
+    </md-app>
   </div>
 </template>
 
 <script>
-import path from "./pages/path";
-import ImageCard from "./components/ImageCard.vue";
-import Map from "./components/Map.vue";
 export default {
+  name: "LastRowFixed",
   data() {
-    return {};
-  },
-  computed: {
-    isFirst() {
-      return path.isFirst(this);
-    },
-    isLast() {
-      return path.isLast(this);
-    },
-    lastPath() {
-      return path.lastPath(this);
-    },
-    nextPath() {
-      return path.nextPath(this);
-    }
-  },
-  created: function() {
-    let vm = this;
-    vm.bus.$on("openMap&sTop", val => {
-      let sTop = document.body || document.documentElement;
-      sTop.scrollTop = 0;
-    });
-  },
-  mounted() {},
-  components: {
-    // Navbar: Navbar
-    ImageCard,
-    Map
-  },
-  methods: {
-    openMap() {
-      let vm = this;
-      this.$refs.mapping.open();
-    },
-    goLast() {
-      this.$router.push({ path: this.lastPath });
-    },
-    goNext() {
-      this.$router.push({ path: this.nextPath });
-    }
+    return {
+      menuVisible: false
+    };
   }
 };
 </script>
+<style lang="scss">
+:root {
+  --md-theme-default-primary: #3f51b5 !important;
+  --md-theme-default-accent: #e91e63 !important;
+}
+.md-tabs.md-theme-default.md-primary .md-tabs-navigation {
+  background-color: #3f51b5;
+  background-color: var(--md-theme-default-primary-on-background, #3f51b5);
+}
+.md-theme-default :not(input):not(textarea)::selection {
+  background-color: #e91e63;
+  background-color: var(--md-theme-default-accent-on-background, #e91e63);
+  color: #fff;
+  color: var(--md-theme-default-text-primary-on-accent, #fff);
+}
+// @import "vue-material/dist/theme/engine";
+// @include md-register-theme(
+//   "default",
+//   (
+//     primary: md-get-palette-color(blue, A200),
+//     accent: md-get-palette-color(red, A200)
+//   )
+// );
+
+// @import "~vue-material/dist/theme/all";
+</style>
 
 <style scoped>
-.mdl-layout-title a {
-  text-decoration: none;
-  color: black;
+.md-app {
+  max-height: 100vh;
+  /* border: 1px solid rgba(#000, 0.12); */
 }
-.mdl-layout-title a.white {
-  color: white;
-}
-main {
-  background-color: #efefef;
+
+/* // Demo purposes only */
+.md-drawer {
+  width: 230px;
+  max-width: calc(100vw - 125px);
 }
 .page-container {
+  height: 100%;
+}
+
+.view-container {
   padding: 0;
-}
-.page {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#footer-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* .last-next {
-  width: 1024px;
-  margin: 0 auto;
-} */
-#goto-last {
-  float: left;
-}
-#goto-next {
-  float: right;
-}
-#footer-nav {
-  height: 36px;
-  padding: 16px 0;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #efefef;
 }
 
 /* 过渡动画 */
 .v-enter {
-  opacity: 0.75;
+  opacity: 0.5;
 }
 .v-enter-active {
-  transition: 0.25s;
+  transition: 0.2s;
 }
 .v-enter-to {
   opacity: 1;
@@ -201,9 +144,9 @@ main {
   opacity: 1;
 }
 .v-leave-to {
-  opacity: 0.75;
+  opacity: 0.5;
 }
 .v-leave-active {
-  transition: 0.25s;
+  transition: 0.2s;
 }
 </style>

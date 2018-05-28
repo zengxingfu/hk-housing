@@ -1,21 +1,22 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import Policy from "./pages/Policy.vue";
-import Live from "./pages/Live.vue";
-import Mapping from "./pages/Mapping.vue";
-import Environment from "./pages/Environment.vue";
-import Overview from "./pages/Overview";
-import Supply from "./pages/Supply";
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Policy from "./views/Policy.vue";
+import Live from "./views/Live.vue";
+import Mapping from "./views/Mapping.vue";
+import Environment from "./views/Environment.vue";
+import Overview from "./views/Overview";
+import Supply from "./views/Supply";
 
 Vue.use(VueRouter);
 
 const router = new VueRouter({
-  routes: [
-    {
-      path: "/",
+  routes: [{
+      path: '/',
+      redirect: '/overview'
+    }, {
+      path: "/overview",
       component: Overview
-    },
-    {
+    }, {
       path: "/policy",
       component: Policy
     },

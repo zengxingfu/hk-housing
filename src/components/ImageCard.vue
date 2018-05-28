@@ -1,12 +1,21 @@
 <template>
-    <div>
-        <div class="demo-card-image mdl-card mdl-shadow--2dp">
-            <div class="mdl-card__title mdl-card--expand"></div>
-            <div class="mdl-card__actions">
-                <span class="demo-card-image__filename">Image.jpg</span>
-            </div>
-        </div>
+    <div class="md-layout md-alignment-center">
+      <md-card class="md-layout-item md-xlarge-size-50 md-large-size-75 md-medium-size-75 md-small-size-100">
+        <md-card-media-cover md-solid>
+          <md-card-media>
+            <img src="../assets/overview-1.jpg" alt="公屋供给失衡">
+          </md-card-media>
+
+          <md-card-area>
+            <md-card-header>
+              <span class="md-title">巧妇难为无米炊</span>
+              <span class="md-subhead">在2018年3月底，一般申请者的平均轮候时间为5.1年。房委会表示，公营房屋旨在为无能力租住私人楼宇的低收入家庭提供公屋和居屋。运输及房屋局副局长苏伟文承认目前公屋供应失衡，呼吁社会支持政府觅地建屋。</span>
+            </md-card-header>
+          </md-card-area>
+        </md-card-media-cover>
+      </md-card>
     </div>
+
 </template>
 
 <script>
@@ -14,23 +23,4 @@ export default {};
 </script>
 
 <style scoped>
-.demo-card-image.mdl-card {
-  width: 250px;
-  min-height: 50px !important;
-  background: url("https://getmdl.io/assets/demos/dog.png") center / cover
-    #46b6ac;
-}
-.demo-card-image > .mdl-card__actions {
-  height: 52px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
-}
-.demo-card-image__filename {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-}
-.mdl-card__title.mdl-card--expand {
-  height: 50px;
-}
 </style>

@@ -1,23 +1,25 @@
 {
-  "name": "hk2018",
-  "version": "1.0.0",
-  "main": "main.js",
-  "license": "MIT",
   "scripts": {
     "start": "parcel index.html --out-dir ./dev",
     "build": "parcel build index.html --public-url ./"
   },
   "dependencies": {
-    "echarts": "^4.1.0",
-    "vue": "^2.5.0",
-    "vue-hot-reload-api": "^2.3.0",
+    "chart.js": "^2.7.2",
+    "vue": "^2.5.16",
+    "vue-material": "^1.0.0-beta-10.2",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
-    "@vue/component-compiler-utils": "^1.2.1",
-    "babel-preset-env": "^1.6.1",
+    "@vue/component-compiler-utils": "^1.3.0",
+    "babel-preset-env": "^1.7.0",
+    "node-sass": "^4.9.0",
     "parcel-bundler": "^1.8.1",
     "parcel-plugin-vue": "^1.5.0",
+    "sass-loader": "^7.0.1",
     "vue-template-compiler": "^2.5.16"
-  }
+  },
+  "name": "hk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
 }

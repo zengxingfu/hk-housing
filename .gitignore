@@ -5,3 +5,4 @@ dev/
 .cache/
 src/assets/.DS_Store
 .DS_Store
+dist/

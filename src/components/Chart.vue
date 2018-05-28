@@ -1,156 +1,63 @@
 <template>
-<div class="chart-card-event mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title mdl-card--expand">
-    <h4>
-        信息图表
-    </h4>
-  </div>
-  <div id="chart-container">
-  </div>
-  
-  <!-- <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      Action Button
-    </a>
-    <div class="mdl-layout-spacer"></div>
-    <i class="material-icons">event</i>
-  </div> -->
-</div>
-
+    <div class="md-layout md-alignment-center">
+        <md-card class="md-layout-item md-xlarge-size-50 md-large-size-75 md-medium-size-75 md-small-size-100 card-chart">
+            <canvas :id="chartId"></canvas>
+        </md-card>
+    </div>
 </template>
 
 <script>
-import * as echarts from "echarts";
+import Chart from "chart.js";
 export default {
+  props: ["chartId"],
   mounted() {
-    let container = document.getElementById("chart-container");
-    let myChart = echarts.init(container);
-    let option = {
-      //   title: {
-      //     text: "堆叠区域图"
-      //   },
-      tooltip: {
-        trigger: "axis",
-        axisPointer: {
-          type: "cross",
-          label: {
-            backgroundColor: "#6a7985"
+    let ctx = document.getElementById(this.chartId);
+    let myChart = new Chart(ctx, {
+      type: "line",
+      data: {
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        datasets: [
+          {
+            label: "公屋申请平均轮候时长",
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+              "rgba(255, 99, 132, 0.2)",
+              "rgba(54, 162, 235, 0.2)",
+              "rgba(255, 206, 86, 0.2)",
+              "rgba(75, 192, 192, 0.2)",
+              "rgba(153, 102, 255, 0.2)",
+              "rgba(255, 159, 64, 0.2)"
+            ],
+            borderColor: [
+              "rgba(255,99,132,1)",
+              "rgba(54, 162, 235, 1)",
+              "rgba(255, 206, 86, 1)",
+              "rgba(75, 192, 192, 1)",
+              "rgba(153, 102, 255, 1)",
+              "rgba(255, 159, 64, 1)"
+            ],
+            borderWidth: 1
           }
-        }
+        ]
       },
-      legend: {
-        data: ["邮件营销", "联盟广告", "视频广告", "直接访问", "搜索引擎"]
-      },
-      toolbox: {
-        feature: {
-          saveAsImage: {}
-        }
-      },
-      grid: {
-        left: "3%",
-        right: "4%",
-        bottom: "3%",
-        containLabel: true
-      },
-      xAxis: [
-        {
-          type: "category",
-          boundaryGap: false,
-          data: ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
-        }
-      ],
-      yAxis: [
-        {
-          type: "value"
-        }
-      ],
-      series: [
-        {
-          name: "邮件营销",
-          type: "line",
-          stack: "总量",
-          areaStyle: { normal: {} },
-          data: [120, 132, 101, 134, 90, 230, 210]
-        },
-        {
-          name: "联盟广告",
-          type: "line",
-          stack: "总量",
-          areaStyle: { normal: {} },
-          data: [220, 182, 191, 234, 290, 330, 310]
-        },
-        {
-          name: "视频广告",
-          type: "line",
-          stack: "总量",
-          areaStyle: { normal: {} },
-          data: [150, 232, 201, 154, 190, 330, 410]
-        },
-        {
-          name: "直接访问",
-          type: "line",
-          stack: "总量",
-          areaStyle: { normal: {} },
-          data: [320, 332, 301, 334, 390, 330, 320]
-        },
-        {
-          name: "搜索引擎",
-          type: "line",
-          stack: "总量",
-          label: {
-            normal: {
-              show: true,
-              position: "top"
+      options: {
+        scales: {
+          yAxes: [
+            {
+              ticks: {
+                beginAtZero: true
+              }
             }
-          },
-          areaStyle: { normal: {} },
-          data: [820, 932, 901, 934, 1290, 1330, 1320]
+          ]
         }
-      ]
-    };
-
-    myChart.setOption(option);
+      }
+    });
   }
 };
 </script>
 
 <style scoped>
-.chart-card-event.mdl-card {
-  margin: 50px 0 0 0;
-  width: 100%;
-  height: 480px;
-  background: white;
+.card-chart {
+  padding: 2%;
 }
-.chart-card-event > .mdl-card__actions {
-  border-color: rgba(0, 0, 0, 0.1);
-}
-.chart-card-event > .mdl-card__title {
-  align-items: flex-start;
-}
-.chart-card-event > .mdl-card__title > h4 {
-  margin-top: 0;
-}
-.chart-card-event > .mdl-card__actions {
-  display: flex;
-  box-sizing: border-box;
-  align-items: center;
-}
-.chart-card-event > .mdl-card__actions > .material-icons {
-  padding-right: 10px;
-}
-#chart-container {
-  width: 100%;
-  height: 100%;
-}
-/* .chart-card-event > .mdl-card__title,
-.chart-card-event > .mdl-card__actions,
-.chart-card-event > .mdl-card__actions > .mdl-button {
-  color: #fff;
-} */
-
-/* .chart-card {
-  margin: 50px 0;
-  width: 100%;
-  height: 480px;
-} */
 </style>
