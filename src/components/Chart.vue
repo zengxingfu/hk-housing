@@ -1,16 +1,30 @@
 <template>
-    <div class="md-layout md-alignment-center">
-        <md-card class="md-layout-item md-xlarge-size-50 md-large-size-75 md-medium-size-75 md-small-size-100 card-chart">
+    <md-card>
+      <md-card-header class="chart-header">
+        <div class="md-title">{{ chartTitle }}</div>
+        <div class="md-subhead">数据来源：{{dataSource}}</div>
+      </md-card-header>
+          <md-card-content>
             <canvas :id="chartId"></canvas>
-        </md-card>
-    </div>
+          </md-card-content>
+      
+    </md-card>
 </template>
+
 
 <script>
 import Chart from "chart.js";
 import chartData from "../assets/chart_data.js";
 export default {
   props: ["chartId"],
+  computed: {
+    chartTitle() {
+      return chartData[this.chartId].options.title.text;
+    },
+    dataSource() {
+      return chartData[this.chartId].options.dataSource.text;
+    }
+  },
   mounted() {
     let ctx = document.getElementById(this.chartId);
     let cfg = chartData[this.chartId];
@@ -20,7 +34,8 @@ export default {
 </script>
 
 <style scoped>
-.card-chart {
-  padding: 2%;
+.chart-header {
+  border-bottom: 1px solid #e0e0e0 !important;
+  padding: 0 0 8px 24px;
 }
 </style>

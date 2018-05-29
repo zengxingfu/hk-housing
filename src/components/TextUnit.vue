@@ -3,6 +3,7 @@
         <h2 v-if="subtitle===''? false : true" >{{title}}</h2>
         <h4 v-if="subtitle===''? false : true" class="text-module__subtitle">{{subtitle}}</h4>
         <h5 v-if="subtitle===''? false : true" >{{content}}</h5>
+        <slot></slot>
     </div>
 </template>
 

@@ -38,7 +38,7 @@ export default {
   display: flex;
   color: white;
   cursor: pointer;
-  height: 126px;
+  height: 100px;
   justify-content: center;
   flex-direction: column;
   /* align-items: center; */
@@ -52,7 +52,7 @@ span {
   background: #3f51b5;
 }
 .bottom-nav__right {
-  background: #e91e63;
+  background: #ff8600;
 }
 .chapter {
   font-weight: 500;

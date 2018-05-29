@@ -86,15 +86,15 @@ export default {
 <style lang="scss">
 :root {
   --md-theme-default-primary: #3f51b5 !important;
-  --md-theme-default-accent: #e91e63 !important;
+  --md-theme-default-accent: #ff8600 !important;
 }
 .md-tabs.md-theme-default.md-primary .md-tabs-navigation {
   background-color: #3f51b5;
   background-color: var(--md-theme-default-primary-on-background, #3f51b5);
 }
 .md-theme-default :not(input):not(textarea)::selection {
-  background-color: #e91e63;
-  background-color: var(--md-theme-default-accent-on-background, #e91e63);
+  background-color: #ff8600;
+  background-color: var(--md-theme-default-accent-on-background, #ff8600);
   color: #fff;
   color: var(--md-theme-default-text-primary-on-accent, #fff);
 }
@@ -122,7 +122,7 @@ export default {
   max-width: calc(100vw - 125px);
 }
 .page-container {
-  height: 100%;
+  /* height: 100vh; */
 }
 
 .view-container {

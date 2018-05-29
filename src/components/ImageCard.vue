@@ -1,26 +1,62 @@
 <template>
-    <div class="md-layout md-alignment-center">
-      <md-card class="md-layout-item md-xlarge-size-50 md-large-size-75 md-medium-size-75 md-small-size-100">
-        <md-card-media-cover md-solid>
-          <md-card-media>
-            <img src="../assets/overview-1.jpg" alt="公屋供给失衡">
-          </md-card-media>
+  <!-- <div class="md-layout md-alignment-center"> -->
+  <!-- class="md-layout-item md-xlarge-size-75 md-large-size-75 md-medium-size-75 md-small-size-100" -->
+  <md-card>
+    <md-card-media-cover md-solid>
+      <md-card-media>
+        <slot></slot>
+      </md-card-media>
+      <md-card-area v-if="showText">
+        <md-card-header class="image-text">
+          <span class="md-title">{{title}}</span>
+          <span class="md-subhead">{{subtitle}}</span>
+        </md-card-header>
+        <md-card-actions v-if="showAction">
+          <md-button class="md-icon-button">
+            <md-icon>arrow_back</md-icon>
+          </md-button>
 
-          <md-card-area>
-            <md-card-header>
-              <span class="md-title">巧妇难为无米炊</span>
-              <span class="md-subhead">在2018年3月底，一般申请者的平均轮候时间为5.1年。房委会表示，公营房屋旨在为无能力租住私人楼宇的低收入家庭提供公屋和居屋。运输及房屋局副局长苏伟文承认目前公屋供应失衡，呼吁社会支持政府觅地建屋。</span>
-            </md-card-header>
-          </md-card-area>
-        </md-card-media-cover>
-      </md-card>
-    </div>
+          <md-button class="md-icon-button">
+            <md-icon>arrow_forward</md-icon>
+          </md-button>
+        </md-card-actions>
+      </md-card-area>
+    </md-card-media-cover>
+  </md-card>
+  <!-- </div> -->
 
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      currentImage: 1
+    };
+  },
+  computed: {
+    showText() {
+      let hasTitle = this.title !== "";
+      let hasSubtitle = this.subtitle !== "";
+      return hasTitle || hasSubtitle;
+    },
+    showAction() {
+      if (this.action) {
+        return true;
+      }
+      return false;
+    }
+  },
+  props: ["title", "subtitle", "action"],
+  methods: {}
+};
 </script>
 
 <style scoped>
+.md-title {
+  font-weight: 300;
+}
+.image-text {
+  padding-bottom: 0 !important;
+}
 </style>
