@@ -13,4 +13,9 @@
 * [x] Mapping optimizing
 * [x] Chart component
 * [x] Video component
-* [ ] Time line
+* [x] Time line
+* [ ] 删掉海上的点
+* [ ] 加文本
+* [ ] 校对数据
+* [ ] 增加一个返回顶部
+* [ ] 创作团队

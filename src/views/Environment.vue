@@ -19,9 +19,6 @@
         <TextUnit title="请欣赏公屋图集" subtitle="副标题副标题副标题副标题副标题副标题副标题副标题副标题副标题副标题" content="啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"></TextUnit>
     
       <div class="md-layout md-alignment-center">
-        <!-- <ImageCard title="图片标题" subtitle="副标题" action="action" class="top-gap bottom-gap md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90">
-            <img src="../assets/overview-1.jpg" alt="">
-        </ImageCard> -->
         <ImageCollection class="bottom-gap md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90"></ImageCollection>
       </div>
         <BottomNav lastChapter="公屋的供需与资源配置效率" nextChapter="居民住房政策的迷思" nextPath="policy" lastPath="supply"></BottomNav>

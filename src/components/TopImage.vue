@@ -42,6 +42,10 @@ export default {
   background: url(http://ww1.sinaimg.cn/large/005AlemFly1frpamsjznvj30zk0dwq5g.jpg)
     center / cover;
 }
+.top-7 {
+  background: url(https://ww1.sinaimg.cn/large/005AlemFly1frty54wtw1j30zk0dwtjw.jpg)
+    center / cover;
+}
 .top-image > .mask {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
