@@ -59,4 +59,8 @@ export default {
 .image-text {
   padding-bottom: 0 !important;
 }
+.md-subhead {
+  font-size: 1.5em;
+  line-height: 2em;
+}
 </style>

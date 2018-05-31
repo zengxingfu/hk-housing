@@ -1,7 +1,7 @@
 <template>
   <div class="page-content">
     <TopImage title="舆论漩涡" background="top-1"></TopImage>
-    <TextUnit class="bottom-gap-negative" title="卷首语" subtitle="" content="2017年，一篇骇人听闻的纪实新闻被中国媒体广为传播。在这篇题为《蜗居香港：我还没死，就住进了棺材里》的报道中，隐藏在香港深水埗区中的笼屋、劏房、棺材房以及20万蜗居于此的居民生活以纪实摄影的形式被呈现。"></TextUnit>
+    <TextUnit class="bottom-gap-negative" title="" subtitle="" content="2017年，一篇骇人听闻的纪实新闻被中国媒体广为传播。在这篇题为《蜗居香港：我还没死，就住进了棺材里》的报道中，隐藏在香港深水埗区中的笼屋、劏房、棺材房以及20万蜗居于此的居民生活以纪实摄影的形式被呈现。"></TextUnit>
     <div class="bottom-gap-negative md-layout md-alignment-center">
       <ImageCard title="" subtitle="" class="md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90">
         <img src="../assets/guancaifang.jpg" alt="">

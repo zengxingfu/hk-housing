@@ -21,9 +21,9 @@
         <img src="../assets/live-3.png" alt="">
       </ImageCard>
     </div>
-    <TextUnit title="请欣赏视频" subtitle="" content=""></TextUnit>
+    <!-- <TextUnit title="请欣赏视频" subtitle="" content=""></TextUnit> -->
     
-    <div class="md-layout md-alignment-center">
+    <div class="top-gap md-layout md-alignment-center">
       <video controls preload="preload" :poster="poster" class="md-elevation-2 bottom-gap md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90">
         <source src="https://1252644334.vod2.myqcloud.com/99de09e9vodtransgzp1252644334/c57e77347447398156356475407/v.f20.mp4" type="video/mp4">
       </video>

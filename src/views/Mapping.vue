@@ -1,8 +1,7 @@
 <template>
   <div>
     <TopImage title="全港公屋地图" background="top-6"></TopImage>
-    <TextUnit title="标题标题标题标题标题标题标题标题" subtitle="副标题副标题副标题副标题副标题副标题副标题" content="啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"></TextUnit>
-    <div class="bottom-gap md-layout md-alignment-center">
+    <div class="top-gap bottom-gap md-layout md-alignment-center">
       <div class="md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90">
         <Mapping></Mapping>
       </div>
