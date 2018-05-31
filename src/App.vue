@@ -7,7 +7,7 @@
             <md-button class="md-icon-button" @click="menuVisible = !menuVisible">
               <md-icon :md-src="logoUri" />
             </md-button>
-            <span class="md-title">公屋60年</span>
+            <span class="md-title">何以安居：香港保障住房的误区与真相</span>
           </div>
 
           <div class="md-toolbar-section-end">

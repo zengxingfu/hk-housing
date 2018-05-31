@@ -1,7 +1,8 @@
 <template>
     <div v-bind:class="background" class="top-image">
         <div class="mask">
-            <h1>{{title}}</h1>
+            <!-- <h1>{{title}}</h1> -->
+            <span class="md-display-2">{{title}}</span>
         </div>
     </div>
 </template>
@@ -43,7 +44,7 @@ export default {
     center / cover;
 }
 .top-7 {
-  background: url(https://ww1.sinaimg.cn/large/005AlemFly1frty54wtw1j30zk0dwtjw.jpg)
+  background: url(https://ws1.sinaimg.cn/large/76a6e147ly1fruojbqci7j20zk0dwqb4.jpg)
     center / cover;
 }
 .top-image > .mask {
@@ -56,7 +57,7 @@ export default {
   justify-content: center;
   align-items: center;
 }
-.top-image > .mask > h1 {
+.top-image > .mask > span {
   color: white;
   /* font-size: 55px; */
   font-weight: 300;

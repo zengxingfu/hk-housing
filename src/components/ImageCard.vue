@@ -8,7 +8,7 @@
       </md-card-media>
       <md-card-area v-if="showText">
         <md-card-header class="image-text">
-          <span class="md-title">{{title}}</span>
+          <span v-if="title===''? false : true" class="md-title">{{title}}</span>
           <span class="md-subhead">{{subtitle}}</span>
         </md-card-header>
         <md-card-actions v-if="showAction">

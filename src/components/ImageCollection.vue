@@ -4,34 +4,9 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide">
-        <ImageCard class="no-margin" title="50年代" subtitle="副标题">
-          <img src="../assets/overview-1.jpg" alt="">
-        </ImageCard>
-      </div>
-      <div class="swiper-slide">
-        <ImageCard class="no-margin" title="60年代" subtitle="副标题">
-          <img src="../assets/overview-1.jpg" alt="">
-        </ImageCard>
-      </div>
-      <div class="swiper-slide">
-        <ImageCard class="no-margin" title="70年代" subtitle="副标题">
-          <img src="../assets/overview-1.jpg" alt="">
-        </ImageCard>
-      </div>
-      <div class="swiper-slide">
-        <ImageCard class="no-margin" title="80年代" subtitle="副标题">
-          <img src="../assets/overview-1.jpg" alt="">
-        </ImageCard>
-      </div>
-      <div class="swiper-slide">
-        <ImageCard class="no-margin" title="90年代" subtitle="副标题">
-          <img src="../assets/overview-1.jpg" alt="">
-        </ImageCard>
-      </div>
-      <div class="swiper-slide">
-        <ImageCard class="no-margin" title="00年代" subtitle="副标题">
-          <img src="../assets/overview-1.jpg" alt="">
+      <div class="swiper-slide" v-for="image in images" :key="image.id">
+        <ImageCard class="no-margin" :title="image.title" :subtitle="image.subtitle">
+          <img :src="image.src" alt="">
         </ImageCard>
       </div>
     </div>
@@ -52,6 +27,9 @@
 import Swiper from "swiper";
 import ImageCard from "./ImageCard";
 export default {
+  props: {
+    images: Array
+  },
   mounted() {
     let mySwiper = new Swiper(".swiper-container", {
       // Optional parameters
