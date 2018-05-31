@@ -59,7 +59,7 @@ let pollingConfig = {
       text: "公屋申请平均轮候时长"
     },
     dataSource: {
-      text: "香港房务委员会年度机构计划"
+      text: "香港房屋委员会年度机构计划"
     },
     tooltips: {
       mode: "index",
@@ -408,7 +408,7 @@ let hkPopulation = {
       text: "1986年-2016年香港总人口数变化"
     },
     dataSource: {
-      text: "香港统计年刊"
+      text: "政府统计处 香港统计年刊"
     },
     tooltips: {
       mode: "index",
@@ -535,7 +535,7 @@ let hkFamily = {
       text: "1982年-2017年香港家庭住戶平均人数"
     },
     dataSource: {
-      text: "政府统计处的香港统计年刊"
+      text: "政府统计处 香港统计年刊"
     },
     tooltips: {
       mode: "index",
@@ -938,7 +938,7 @@ let vacancy = {
       text: "公屋空置率"
     },
     dataSource: {
-      text: "香港房务委员会年度机构计划"
+      text: "香港房屋委员会年度机构计划"
     },
     tooltips: {
       mode: "index",
