@@ -60,7 +60,8 @@ export default {
   padding-bottom: 0 !important;
 }
 .md-subhead {
-  font-size: 1.5em;
-  line-height: 2em;
+  /* font-weight: 300; */
+  font-size: 1.25em;
+  line-height: 1.5em;
 }
 </style>

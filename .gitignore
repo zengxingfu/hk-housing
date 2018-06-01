@@ -6,3 +6,4 @@ dev/
 src/assets/.DS_Store
 .DS_Store
 dist/
+dist/index.html

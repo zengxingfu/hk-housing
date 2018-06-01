@@ -25,7 +25,7 @@
     
     <div class="top-gap md-layout md-alignment-center">
       <video controls preload="preload" :poster="poster" class="md-elevation-2 bottom-gap md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90">
-        <source src="https://1252644334.vod2.myqcloud.com/99de09e9vodtransgzp1252644334/c57e77347447398156356475407/v.f20.mp4" type="video/mp4">
+        <source src="https://1252644334.vod2.myqcloud.com/99de09e9vodtransgzp1252644334/db8401957447398156370931928/v.f20.mp4" type="video/mp4">
       </video>
     </div>
     <BottomNav lastChapter="舆论漩涡" nextChapter="供需迷局" nextPath="supply" lastPath="overview"></BottomNav>
@@ -51,6 +51,4 @@ export default {
 </script>
 
 <style scoped>
-video {
-}
 </style>

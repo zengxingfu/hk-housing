@@ -39,7 +39,7 @@
     </TextUnit>
     <div class="top-gap md-layout md-alignment-center">
       <video controls preload="preload" :poster="poster" class="md-elevation-2 md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90">
-        <source src="https://1252644334.vod2.myqcloud.com/99de09e9vodtransgzp1252644334/c5456b887447398156356440304/v.f20.mp4" type="video/mp4">
+        <source src="https://1252644334.vod2.myqcloud.com/99de09e9vodtransgzp1252644334/d4f447387447398156370697229/v.f20.mp4" type="video/mp4">
       </video>
     </div>
     <TextUnit title="私楼售价连年高速攀升，给公屋居民置业造成障碍" subtitle="" content="人性弱点之外，香港私屋售价的连续暴涨是导致公屋居民置业意愿低的客观原因。2017年，香港楼市实现14.37%的涨幅，反映香港房价的中原城市领先指数也一度达到165.62的历史最高点。至2018年2月，香港楼市已连涨21个月。尽管港府出台了一系列调控政策，但结果是陡劳无功。"></TextUnit>
