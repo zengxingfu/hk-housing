@@ -20,27 +20,27 @@ export default {
   height: 480px;
 }
 .top-1 {
-  background: url(http://ww1.sinaimg.cn/large/005AlemFly1frp9qyaug9j30zk0dwn00.jpg)
+  background: url(https://ww1.sinaimg.cn/large/005AlemFly1frp9qyaug9j30zk0dwn00.jpg)
     center / contain;
 }
 .top-2 {
-  background: url(http://ww1.sinaimg.cn/large/005AlemFly1frpals4jnej30zk0dwq5g.jpg)
+  background: url(https://ww1.sinaimg.cn/large/005AlemFly1frpals4jnej30zk0dwq5g.jpg)
     center / contain;
 }
 .top-3 {
-  background: url(http://ww1.sinaimg.cn/large/005AlemFly1frpam636o3j30zk0dwq40.jpg)
+  background: url(https://ww1.sinaimg.cn/large/005AlemFly1frpam636o3j30zk0dwq40.jpg)
     center / cover;
 }
 .top-4 {
-  background: url(http://ww1.sinaimg.cn/large/005AlemFly1frpamhqa1gj30zk0dwwh8.jpg)
+  background: url(https://ww1.sinaimg.cn/large/005AlemFly1frpamhqa1gj30zk0dwwh8.jpg)
     center / contain;
 }
 .top-5 {
-  background: url(http://ww1.sinaimg.cn/large/005AlemFly1frpamn7gtoj30zk0dwaby.jpg)
+  background: url(https://ww1.sinaimg.cn/large/005AlemFly1frpamn7gtoj30zk0dwaby.jpg)
     center / contain;
 }
 .top-6 {
-  background: url(http://ww1.sinaimg.cn/large/005AlemFly1frpamsjznvj30zk0dwq5g.jpg)
+  background: url(https://ww1.sinaimg.cn/large/005AlemFly1frpamsjznvj30zk0dwq5g.jpg)
     center / cover;
 }
 .top-7 {

@@ -7,12 +7,12 @@
     
     <div class="md-layout md-alignment-center">
       <ImageCard title="" subtitle="" class="md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90">
-        <img src="../assets/policy1.png" alt="">
+        <img src="../../assets/policy1.png" alt="">
       </ImageCard>
     </div>
     <div class="top-gap md-layout md-alignment-center">
       <ImageCard title="" subtitle="" class="md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90">
-        <img src="../assets/policy2.png" alt="">
+        <img src="../../assets/policy2.png" alt="">
       </ImageCard>
     </div>
     <TextUnit class="bottom-gap-negative" title="租住公屋可以轻易实现财富积累" subtitle="" content="以租金最低的新界公屋为例，新界2007-2016公屋租金均值为46.7港元，私屋房租均值为178港元。以30平米的公屋为例，租住10年，相比租住同等大小的私屋，可以节省47.6万港元。租住公屋可以轻易实现财富积累。近来一则社会新闻在香港广为传播，居于新界沙田区的一位女性公屋居民，被网络诈骗犯骗走积蓄2600余万港元。虽然这位居民早已有能力在香港购置物业，但她依然占据公屋资源，而政府对此并无干涉。"></TextUnit>
@@ -24,7 +24,7 @@
     </div>
     <div class="top-gap md-layout md-alignment-center">
       <ImageCard title="" subtitle="" class="md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90">
-        <img src="../assets/fupo.png" alt="">
+        <img src="../../assets/fupo.png" alt="">
       </ImageCard>
     </div>
     <TextUnit class="bottom-gap-negative" title="公屋居民出于各种原因不愿搬离" subtitle="" content="通过对不同年龄段的公屋居民进行采访，可以发现出于各种原因，他们更愿意长居公屋而不愿在香港购置房产。">
@@ -50,7 +50,7 @@
     <TextUnit title="港府的资助置业计划一波三折" subtitle="" content="香港政府并非没有尝试在公屋和私楼之间为香港居民提供第三条安居道路。首任香港行政特首董建华率先提出了“八万五建屋计划”，提出政府每年将新增供应不少于8万5千套住宅单位，希望10年内香港的七成家庭可以自置居所，轮候租住公屋的平均时间也可以由6.5年缩短至3年。然而，激增的房地产供应量加之亚洲金融风暴使得香港的房价一落千丈，从1997年至2003年共下跌70%。在房地产市场的严重危机下，“八万五”计划暂时搁置，在此阶段，香港政府只提供出租公屋服务，自置居所政策停止执行。2014年，香港政府开始逐步开放居屋销售，每年有计划的向居民出售一部分房屋。但从近三年的数据可以看出，目前香港的居屋计划远远未能满足居民的置业需求。"></TextUnit>
 
     <ImageCard class="no-margin" title="" subtitle="">
-      <img src="../assets/policy3.png" alt="">
+      <img src="../../assets/policy3.png" alt="">
     </ImageCard>
     <div class="top-gap md-layout md-alignment-center">
       <Chart class="md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90" chartId="ownership"></Chart>
@@ -66,13 +66,13 @@
 </template>
 
 <script>
-import TopImage from "../components/TopImage";
-import TextUnit from "../components/TextUnit";
-import TextUnit2 from "../components/TextUnit2";
-import BottomNav from "../components/BottomNav";
-import ImageCard from "../components/ImageCard";
-import Chart from "../components/Chart";
-import videoPoster from "../assets/changju.jpg";
+import TopImage from "../../components/TopImage";
+import TextUnit from "../../components/TextUnit";
+import TextUnit2 from "../../components/TextUnit2";
+import BottomNav from "../../components/BottomNav";
+import ImageCard from "../../components/ImageCard";
+import Chart from "../../components/Chart";
+import videoPoster from "../../assets/changju.jpg";
 
 export default {
   data() {

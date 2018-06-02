@@ -6,15 +6,15 @@
         <Mapping></Mapping>
       </div>
     </div>
-    <BottomNav lastChapter="公屋60年" nextChapter="" nextPath="" lastPath="album"></BottomNav>
+    <BottomNav lastChapter="公屋60年" nextChapter="团队" nextPath="/team" lastPath="album"></BottomNav>
   </div>
 </template>
 
 <script>
-import TopImage from "../components/TopImage";
-import BottomNav from "../components/BottomNav";
-import TextUnit from "../components/TextUnit";
-import Mapping from "../components/Mapping";
+import TopImage from "../../components/TopImage";
+import BottomNav from "../../components/BottomNav";
+import TextUnit from "../../components/TextUnit";
+import Mapping from "../../components/Mapping";
 export default { components: { TopImage, BottomNav, TextUnit, Mapping } };
 </script>
 

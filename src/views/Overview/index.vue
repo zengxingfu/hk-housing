@@ -4,7 +4,7 @@
     <TextUnit class="bottom-gap-negative" title="" subtitle="" content="2017年，一篇骇人听闻的纪实新闻被中国媒体广为传播。在这篇题为《蜗居香港：我还没死，就住进了棺材里》的报道中，隐藏在香港深水埗区中的笼屋、劏房、棺材房以及20万蜗居于此的居民生活以纪实摄影的形式被呈现。"></TextUnit>
     <div class="bottom-gap-negative md-layout md-alignment-center">
       <ImageCard title="" subtitle="" class="md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90">
-        <img src="../assets/guancaifang.jpg" alt="">
+        <img src="../../assets/guancaifang.jpg" alt="">
       </ImageCard>
     </div>
     <TextUnit title="" subtitle="" content="与中国内地类似，香港也有为低收入人群提供居住保障的廉租房与经济适用房，分别称为公屋与居屋。申请租金低廉的公屋是香港低收入人群解决住房问题的首选项。然而，目前香港的公屋数量却不足以将20万蜗居的港人纳入保护网之下。贫困港人住房难、社会贫富严重不均、社会分化加剧一时成为舆论漩涡的中心。港府在公众舆论压力下，做出了增加土地供应的决定。关注弱势群体、揭示社会问题，是媒体舆论监督的职责所在。描述性的媒体报道的确能够发现问题，但却往往难以触及真相。香港的保障性住房政策的确存在问题，但并非只是供不应求这么简单。片面的数据解读和武断的政策导向，可能让香港的住房问题在误区中越走越远。"></TextUnit>
@@ -13,7 +13,7 @@
 
     <div class="top-gap md-layout md-alignment-center">
       <ImageCard title="" subtitle="" class="md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90">
-        <img src="../assets/overview1.png" alt="">
+        <img src="../../assets/overview1.png" alt="">
       </ImageCard>
     </div>
     <!-- <TextUnit title="施老师说这里有一个媒体报道" subtitle="媒体报道的副标题" content="啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"></TextUnit> -->
@@ -33,7 +33,7 @@
     <TextUnit class="bottom-gap-negative" title="公屋政策是媒体报道焦点" subtitle="" content="借助自然语言处理和话题聚类技术对过去一年间的港媒相关报道进行处理可以发现，媒体报道大致可以分为5类，其中报道涉及最多的话题是香港特区政府的公屋政策，其次是公屋申请的相关问题。在公营房屋的相关问题上，香港特区政府被推至风口浪尖。在港媒的报道中，土地紧缺导致公屋供不应求是问题的关键；增加土地开发、提高公屋供应量则是多数报道的解决方案导向。"></TextUnit>
     <div class="md-layout md-alignment-center">
       <ImageCard title='' subtitle='' class="bottom-gap-negative md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90">
-        <img src="../assets/overview-2.jpg" alt="">
+        <img src="../../assets/overview-2.jpg" alt="">
       </ImageCard>
     </div>
     <TextUnit title="" subtitle="" content="当供不应求的情况出现时，最直接的解决方案是增加供应量。而这也正是近来港人热议的焦点问题。自4月26日起，香港在全社会范围内进行为期5个月“土地大讨论”。香港特区政府列出了18项潜在住房土地来源。港人可以通过参与讨论和投票，决定新增居住用地的来源。讨论的结果尚不得而知，但有一点非常确定：开发土地建造住房已成定局。"></TextUnit>
@@ -43,12 +43,12 @@
 </template>
 
 <script>
-import TopImage from "../components/TopImage";
-import TextUnit from "../components/TextUnit";
-import TextUnit2 from "../components/TextUnit2";
-import ImageCard from "../components/ImageCard";
-import Chart from "../components/Chart";
-import BottomNav from "../components/BottomNav";
+import TopImage from "../../components/TopImage";
+import TextUnit from "../../components/TextUnit";
+import TextUnit2 from "../../components/TextUnit2";
+import ImageCard from "../../components/ImageCard";
+import Chart from "../../components/Chart";
+import BottomNav from "../../components/BottomNav";
 export default {
   components: { TopImage, TextUnit, TextUnit2, ImageCard, Chart, BottomNav }
 };

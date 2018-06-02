@@ -37,12 +37,12 @@
 </template>
 
 <script>
-import TopImage from "../components/TopImage";
-import BottomNav from "../components/BottomNav";
-import TextUnit2 from "../components/TextUnit2";
-import TextUnit from "../components/TextUnit";
-import ImageCollection from "../components/ImageCollection";
-import imageCollectionData from "../assets/image_collection_data.js";
+import TopImage from "../../components/TopImage";
+import BottomNav from "../../components/BottomNav";
+import TextUnit2 from "../../components/TextUnit2";
+import TextUnit from "../../components/TextUnit";
+import ImageCollection from "../../components/ImageCollection";
+import imageCollectionData from "../../assets/image_collection_data.js";
 export default {
   data() {
     return {

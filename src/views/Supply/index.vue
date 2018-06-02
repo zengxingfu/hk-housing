@@ -34,11 +34,11 @@
 </template>
 
 <script>
-import TopImage from "../components/TopImage";
-import BottomNav from "../components/BottomNav";
-import Chart from "../components/Chart";
-import TextUnit2 from "../components/TextUnit2";
-import TextUnit from "../components/TextUnit";
+import TopImage from "../../components/TopImage";
+import BottomNav from "../../components/BottomNav";
+import Chart from "../../components/Chart";
+import TextUnit2 from "../../components/TextUnit2";
+import TextUnit from "../../components/TextUnit";
 
 export default {
   components: { TopImage, BottomNav, Chart, TextUnit2, TextUnit }
