@@ -15,11 +15,13 @@
     <TextUnit2>
         <img src="../../assets/environment-1.png" alt="">
     </TextUnit2>
-      <div class="top-gap md-layout md-alignment-center">
-      <Chart class="bottom-gap md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90" chartId="satisfaction"></Chart>
+    <div class="top-gap md-layout md-alignment-center">
+      <Chart class="md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90" chartId="satisfaction"></Chart>
     </div>
-
-    
+    <div class="top-gap md-layout md-alignment-center">
+      <!-- <Chart class="bottom-gap md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90" chartId="satisfaction"></Chart> -->
+      <ImageCollection class="bottom-gap md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90" :images="images"></ImageCollection>
+    </div>
         <BottomNav lastChapter="供需迷局" nextChapter="公屋安居" nextPath="policy" lastPath="supply"></BottomNav>
     </div>
 </template>
@@ -32,7 +34,63 @@ import Chart from "../../components/Chart";
 import BottomNav from "../../components/BottomNav";
 import ImageCard from "../../components/ImageCard";
 import ImageCollection from "../../components/ImageCollection";
+import fifty_1 from "../../assets/1950/1.jpg";
+import sixty_1 from "../../assets/1960/1.jpg";
+import seventy_4 from "../../assets/1970/4.jpg";
+import eighty_1 from "../../assets/1980/1.jpg";
+import ninety_6 from "../../assets/1990/6.jpg";
+import twentyFirst_2 from "../../assets/2000/2.jpg";
+import twentyFirst_5 from "../../assets/2000/5.jpg";
+
 export default {
+  data() {
+    return {
+      images: [
+        {
+          id: 1,
+          subtitle:
+            "1.	50年代的公屋主要是政府为了要在最短时间内安置灾民新建。所以大多是不用安装电梯的七层大厦，浴室和厕所都是共享的，人均单位面积仅有2平米左右。",
+          src: fifty_1
+        },
+        {
+          id: 2,
+          subtitle:
+            "2.	60年代公屋设计的主要目的是提升居住环境以及期望安置更多住户。这些公屋高12-20层，开始设有电梯和独立的厕所，人均面积也由2.2平方米提升到约3.3平方米。",
+          src: sixty_1
+        },
+        {
+          id: 3,
+          subtitle:
+            "3.	70年代， 社区式规划的屋邨开始建立，配套设施开始多元化，人均居住面积也提升到约4.7平方米，居住环境进一步改善。",
+          src: seventy_4
+        },
+        {
+          id: 4,
+          subtitle:
+            "4.	80年代，公屋设计注重改进噪音，隐私问题，且每户设立了独立的浴室，厨房和露台，单位面积也提升到由47-70平方米。",
+          src: eighty_1
+        },
+        {
+          id: 5,
+          subtitle:
+            "5.	90年代开始大量新建的和谐式公屋对治安进行了改善，如大堂装设了大门，设置安保摄像等。单位类别也开始划分，包括1-2人，2-3人，1睡房，2睡房和3睡房。",
+          src: ninety_6
+        },
+        {
+          id: 6,
+          subtitle:
+            "6.	21世纪初，屋邨的建设更注重在提供舒适居所的同时减少对环境的影响。设计目的主要是为了让单位和公共地方得到更好的通风和采光，以及尽可能增加屋邨绿化。",
+          src: twentyFirst_2
+        },
+        {
+          id: 7,
+          subtitle:
+            "7.	现时公屋设计以改善人居环境为主要目的，从屋邨各条道路的布局规划到绿化范围都是希望达到“功能至上、高成本效益设计”。",
+          src: twentyFirst_5
+        }
+      ]
+    };
+  },
   components: {
     TopImage,
     BottomNav,
