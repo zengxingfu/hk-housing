@@ -6,7 +6,7 @@
         <Mapping></Mapping>
       </div>
     </div>
-    <BottomNav lastChapter="公屋60年" nextChapter="团队" nextPath="/team" lastPath="album"></BottomNav>
+    <BottomNav lastChapter="公屋60年" nextChapter="关于作品" nextPath="/team" lastPath="album"></BottomNav>
   </div>
 </template>
 
