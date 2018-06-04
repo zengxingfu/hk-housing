@@ -5,7 +5,7 @@
     <div class="md-layout md-alignment-center">
       <Chart class="md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90" chartId="povertyHousing"></Chart>
     </div>
-    <TextUnit class="bottom-gap-negative" title="公屋资源分配严重不均" subtitle="" content="截止2016年底，全港贫穷人口总数为99.6万人，占香港总人口的12%，同年，香港公屋的认可居民数达到了香港总人口的28%。在理想的情况下，香港公屋的供应量应该完全可以满足香港贫穷人口的住房需求。但但这却和实际情况大相径庭。这说明，公屋的资源分配严重不均。"></TextUnit>
+    <TextUnit class="bottom-gap-negative" title="公屋资源分配严重不均" subtitle="" content="截止2016年底，全港贫穷人口总数为99.6万人，占香港总人口的12%，同年，香港公屋的认可居民数达到了香港总人口的28%。在理想的情况下，香港公屋的供应量应该完全可以满足香港贫穷人口的住房需求。但这却和实际情况大相径庭。这说明，公屋的资源分配严重不均。"></TextUnit>
     <div class="md-layout md-alignment-center">
       <Chart class="top-gap md-layout-item md-xlarge-size-30 md-large-size-35 md-medium-size-80 md-small-size-90" chartId="poverty"></Chart>
       <Chart class="top-gap md-layout-item md-xlarge-size-30 md-large-size-35 md-medium-size-80 md-small-size-90" chartId="housingPie"></Chart>

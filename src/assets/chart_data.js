@@ -157,7 +157,7 @@ let reportConfig = {
     responsive: true,
     title: {
       display: false,
-      text: "1995年-2018年香港媒体关于公屋的新闻报道量"
+      text: "1995-2018年香港媒体关于公屋的新闻报道量"
     },
     dataSource: {
       text: "Factiva媒体数据库"
@@ -263,9 +263,9 @@ let povertyConfig = {
     datasets: [{
       data: [12, 88],
       backgroundColor: ["#3f51b5", "#ED7D31"],
-      label: "贫困人口比例"
+      label: "贫穷人口比例"
     }],
-    labels: ["香港贫困人口", "香港贫困线以上人口"]
+    labels: ["香港贫穷人口", "香港贫穷线以上人口"]
   },
   options: {
     responsive: true,
@@ -273,7 +273,7 @@ let povertyConfig = {
       text: "香港政府统计处2016年统计"
     },
     title: {
-      text: "2016香港贫困人口比例",
+      text: "2016年香港贫穷人口比例",
       display: false
     }
   }
@@ -285,7 +285,7 @@ let housingPieConfig = {
     datasets: [{
       data: [28, 72],
       backgroundColor: ["#3f51b5", "#ED7D31"],
-      label: "2016公屋认可居民比例"
+      label: "2016年公屋认可居民比例"
     }],
     labels: ["公屋认可居民数", "非公屋居民数"]
   },
@@ -295,7 +295,7 @@ let housingPieConfig = {
       text: "香港政府统计处2016年统计"
     },
     title: {
-      text: "2016公屋认可居民比例",
+      text: "2016年公屋认可居民比例",
       display: false
     }
   }
@@ -405,7 +405,7 @@ let hkPopulation = {
     responsive: true,
     title: {
       display: false,
-      text: "1986年-2016年香港总人口数变化"
+      text: "1986-2016年香港总人口数变化"
     },
     dataSource: {
       text: "政府统计处 香港统计年刊"
@@ -532,7 +532,7 @@ let hkFamily = {
     responsive: true,
     title: {
       display: false,
-      text: "1982年-2017年香港家庭住戶平均人数"
+      text: "1982-2017年香港家庭住戶平均人数"
     },
     dataSource: {
       text: "政府统计处 香港统计年刊"
@@ -605,7 +605,7 @@ let unitAndPopulation = {
     ],
     datasets: [{
         type: "line",
-        label: "單位數目",
+        label: "单位数目",
         backgroundColor: "rgb(253,134,36)",
         borderColor: "rgb(253,134,36)",
         data: [
@@ -645,7 +645,7 @@ let unitAndPopulation = {
         yAxisID: "y-axis-1"
       },
       {
-        label: "認可居民人數",
+        label: "认可居民人数",
         backgroundColor: "rgb(63,81,181)",
         borderColor: "#3f51b5",
         data: [
@@ -829,7 +829,7 @@ let elder = {
     responsive: true,
     title: {
       display: false,
-      text: "1999年-2017年公屋非长者一人申请数量与占比变化"
+      text: "1999-2017年公屋非长者一人申请数量与占比变化"
     },
     dataSource: {
       text: "香港房屋署"
@@ -1386,7 +1386,7 @@ let housingChange = {
         display: true,
         scaleLabel: {
           display: true,
-          labelString: "單位數目"
+          labelString: "单位数目"
         },
         ticks: {
           beginAtZero: true
