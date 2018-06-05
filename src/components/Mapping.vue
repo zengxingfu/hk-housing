@@ -10,16 +10,23 @@
                   <iframe src="https://lbs.amap.com/dev/mapdata/share/fa7b6909a1d9d15476068709d25bc5a6" frameborder="0"></iframe>
                 </md-tab>
                 <md-tab class="mapping-container" id="mapping-50" md-label="20世纪50-60年代（图）">
-                  <img :src="mappingImage50" alt="">
+                  <!-- <img :src="mappingImage50" alt=""> -->
+                  <div class="mapping-image mapping-image-50"></div>
                 </md-tab>
                 <md-tab class="mapping-container" id="mapping-70" md-label="20世纪70-80年代（图）">
-                  <img :src="mappingImage70" alt="">
+                  <!-- <img :src="mappingImage70" alt=""> -->
+                  <div class="mapping-image mapping-image-70"></div>
+                  
                 </md-tab>
                 <md-tab class="mapping-container" id="mapping-90" md-label="20世纪90年代（图）">
-                  <img :src="mappingImage90" alt="">
+                  <!-- <img :src="mappingImage90" alt=""> -->
+                  <div class="mapping-image mapping-image-90"></div>
+                  
                 </md-tab>
                 <md-tab class="mapping-container" id="maping-2000" md-label="21世纪（图）">
-                  <img :src="mappingImage2000" alt="">
+                  <!-- <img :src="mappingImage2000" alt=""> -->
+                  <div class="mapping-image mapping-image-2000"></div>
+                  
                 </md-tab>
             </md-tabs>
           </md-card-content>
@@ -29,23 +36,28 @@
 
 
 <script>
-import mappingImage50 from "../assets/mapping-images/50.png";
-import mappingImage70 from "../assets/mapping-images/70.png";
-import mappingImage90 from "../assets/mapping-images/90.png";
-import mappingImage2000 from "../assets/mapping-images/2000.png";
+// import mappingImage50 from "../assets/mapping-images/50.png";
+// import mappingImage70 from "../assets/mapping-images/70.png";
+// import mappingImage90 from "../assets/mapping-images/90.png";
+// import mappingImage2000 from "../assets/mapping-images/2000.png";
 export default {
-  data() {
-    return {
-      mappingImage50,
-      mappingImage70,
-      mappingImage90,
-      mappingImage2000
-    };
-  }
+  // data() {
+  //   return {
+  //     mappingImage50,
+  //     mappingImage70,
+  //     mappingImage90,
+  //     mappingImage2000
+  //   };
+  // }
 };
 </script>
+<style lang="scss" scoped>
+
+</style>
+
 
 <style scoped>
+
 .chart-header {
   border-bottom: 1px solid #e0e0e0 !important;
   padding: 1px 0 8px 24px;
@@ -57,11 +69,25 @@ export default {
   padding-right: 0;
   padding-bottom: 0;
 }
-
+.mapping-image {
+  height: 640px;
+}
+.mapping-image-50 {
+  background: url('https://ws2.sinaimg.cn/large/006tNc79ly1fs043bxabaj30xg0lf790.jpg') center / cover;
+}
+.mapping-image-70 {
+  background: url('https://ws2.sinaimg.cn/large/006tNc79ly1fs0476g57dj30xg0lgjw1.jpg') center / cover;
+}
+.mapping-image-90 {
+  background: url('https://ws4.sinaimg.cn/large/006tNc79ly1fs047676tfj30xi0legqc.jpg') center / cover;
+}
+.mapping-image-2000 {
+  background: url('https://ws4.sinaimg.cn/large/006tNc79ly1fs04760sqkj30xj0lgjw0.jpg') center / cover;
+}
 iframe,
 img {
   width: 100%;
-  height: 720px;
+  height: 640px;
 }
 
 .md-card-content {
