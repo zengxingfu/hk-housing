@@ -22,35 +22,37 @@ let pollingConfig = {
       "2017年",
       "2018年（3月）"
     ],
-    datasets: [{
-      label: "轮候时长（年）",
-      // backgroundColor: window.chartColors.red,
-      // borderColor: window.chartColors.red,
-      backgroundColor: "rgb(63,81,181)",
-      borderColor: "#3f51b5",
-      data: [
-        5,
-        4,
-        3.1,
-        2.3,
-        2.1,
-        1.8,
-        2,
-        3,
-        3,
-        1.8,
-        2,
-        2.3,
-        2.7,
-        2.8,
-        3.1,
-        3.6,
-        4.5,
-        4.7,
-        5.1
-      ],
-      fill: false
-    }]
+    datasets: [
+      {
+        label: "轮候时长（年）",
+        // backgroundColor: window.chartColors.red,
+        // borderColor: window.chartColors.red,
+        backgroundColor: "rgb(63,81,181)",
+        borderColor: "#3f51b5",
+        data: [
+          5,
+          4,
+          3.1,
+          2.3,
+          2.1,
+          1.8,
+          2,
+          3,
+          3,
+          1.8,
+          2,
+          2.3,
+          2.7,
+          2.8,
+          3.1,
+          3.6,
+          4.5,
+          4.7,
+          5.1
+        ],
+        fill: false
+      }
+    ]
   },
   options: {
     responsive: true,
@@ -70,23 +72,27 @@ let pollingConfig = {
       intersect: true
     },
     scales: {
-      xAxes: [{
-        display: true,
-        scaleLabel: {
-          display: false,
-          labelString: "Month"
+      xAxes: [
+        {
+          display: true,
+          scaleLabel: {
+            display: false,
+            labelString: "Month"
+          }
         }
-      }],
-      yAxes: [{
-        display: true,
-        scaleLabel: {
-          display: false,
-          labelString: "轮候时长（年）"
-        },
-        ticks: {
-          beginAtZero: true
+      ],
+      yAxes: [
+        {
+          display: true,
+          scaleLabel: {
+            display: false,
+            labelString: "轮候时长（年）"
+          },
+          ticks: {
+            beginAtZero: true
+          }
         }
-      }]
+      ]
     }
   }
 };
@@ -120,38 +126,40 @@ let reportConfig = {
       "2017年",
       "2018年（至5月）"
     ],
-    datasets: [{
-      label: "报道量",
-      backgroundColor: "rgba(63,81,181,0.75)",
-      borderColor: "#3f51b5",
-      fill: true,
-      data: [
-        156,
-        265,
-        444,
-        625,
-        563,
-        1015,
-        973,
-        1565,
-        1541,
-        2159,
-        2113,
-        1644,
-        1807,
-        1689,
-        1721,
-        3154,
-        4115,
-        5901,
-        3225,
-        3795,
-        5891,
-        5295,
-        6739,
-        2476
-      ]
-    }]
+    datasets: [
+      {
+        label: "报道量（篇）",
+        backgroundColor: "rgba(63,81,181,0.75)",
+        borderColor: "#3f51b5",
+        fill: true,
+        data: [
+          156,
+          265,
+          444,
+          625,
+          563,
+          1015,
+          973,
+          1565,
+          1541,
+          2159,
+          2113,
+          1644,
+          1807,
+          1689,
+          1721,
+          3154,
+          4115,
+          5901,
+          3225,
+          3795,
+          5891,
+          5295,
+          6739,
+          2476
+        ]
+      }
+    ]
   },
   options: {
     responsive: true,
@@ -171,23 +179,27 @@ let reportConfig = {
       intersect: true
     },
     scales: {
-      xAxes: [{
-        display: true,
-        scaleLabel: {
-          display: false,
-          labelString: "Year"
+      xAxes: [
+        {
+          display: true,
+          scaleLabel: {
+            display: false,
+            labelString: "Year"
+          }
         }
-      }],
-      yAxes: [{
-        display: true,
-        scaleLabel: {
-          display: false,
-          labelString: "报道量"
-        },
-        ticks: {
-          beginAtZero: true
+      ],
+      yAxes: [
+        {
+          display: true,
+          scaleLabel: {
+            display: false,
+            labelString: "报道量"
+          },
+          ticks: {
+            beginAtZero: true
+          }
         }
-      }]
+      ]
     }
   }
 };
@@ -210,13 +222,15 @@ let reportLastYearConfig = {
       "2018年4月",
       "2018年5月"
     ],
-    datasets: [{
-      label: "报道量",
-      backgroundColor: "rgba(63,81,181,0.75)",
-      borderColor: "#3f51b5",
-      fill: true,
-      data: [209, 533, 463, 500, 563, 875, 647, 482, 517, 418, 570, 500, 371]
-    }]
+    datasets: [
+      {
+        label: "报道量（篇）",
+        backgroundColor: "rgba(63,81,181,0.75)",
+        borderColor: "#3f51b5",
+        fill: true,
+        data: [209, 533, 463, 500, 563, 875, 647, 482, 517, 418, 570, 500, 371]
+      }
+    ]
   },
   options: {
     responsive: true,
@@ -236,23 +250,27 @@ let reportLastYearConfig = {
       intersect: true
     },
     scales: {
-      xAxes: [{
-        display: true,
-        scaleLabel: {
-          display: false,
-          labelString: "Year"
+      xAxes: [
+        {
+          display: true,
+          scaleLabel: {
+            display: false,
+            labelString: "Year"
+          }
         }
-      }],
-      yAxes: [{
-        display: true,
-        scaleLabel: {
-          display: false,
-          labelString: "报道量"
-        },
-        ticks: {
-          beginAtZero: true
+      ],
+      yAxes: [
+        {
+          display: true,
+          scaleLabel: {
+            display: false,
+            labelString: "报道量"
+          },
+          ticks: {
+            beginAtZero: true
+          }
         }
-      }]
+      ]
     }
   }
 };
@@ -260,12 +278,14 @@ let reportLastYearConfig = {
 let povertyConfig = {
   type: "pie",
   data: {
-    datasets: [{
-      data: [12, 88],
-      backgroundColor: ["#3f51b5", "#ED7D31"],
-      label: "贫穷人口比例"
-    }],
-    labels: ["香港贫穷人口", "香港贫穷线以上人口"]
+    datasets: [
+      {
+        data: [12, 88],
+        backgroundColor: ["#3f51b5", "#ED7D31"],
+        label: "贫穷人口比例"
+      }
+    ],
+    labels: ["香港贫穷人口（%）", "香港贫穷线以上人口（%）"]
   },
   options: {
     responsive: true,
@@ -282,12 +302,14 @@ let povertyConfig = {
 let housingPieConfig = {
   type: "pie",
   data: {
-    datasets: [{
-      data: [28, 72],
-      backgroundColor: ["#3f51b5", "#ED7D31"],
-      label: "2016年公屋认可居民比例"
-    }],
-    labels: ["公屋认可居民数", "非公屋居民数"]
+    datasets: [
+      {
+        data: [28, 72],
+        backgroundColor: ["#3f51b5", "#ED7D31"],
+        label: "2016年公屋认可居民比例"
+      }
+    ],
+    labels: ["公屋认可居民（%）", "非公屋居民（%）"]
   },
   options: {
     responsive: true,
@@ -304,12 +326,18 @@ let housingPieConfig = {
 let povertyHousingConfig = {
   type: "pie",
   data: {
-    datasets: [{
-      data: [41.6, 8.8, 49.6],
-      backgroundColor: ["#3F51B5", "#ED7D31", "#A5A5A5"],
-      label: "香港贫穷人口住房类型分布"
-    }],
-    labels: ["租住在公屋", "租住在私人房屋中", "居住在其他类型房屋中"]
+    datasets: [
+      {
+        data: [41.6, 8.8, 49.6],
+        backgroundColor: ["#3F51B5", "#ED7D31", "#A5A5A5"],
+        label: "香港贫穷人口住房类型分布"
+      }
+    ],
+    labels: [
+      "租住在公屋（%）",
+      "租住在私人房屋中（%）",
+      "居住在其他类型房屋中（%）"
+    ]
   },
   options: {
     responsive: true,
@@ -359,47 +387,49 @@ let hkPopulation = {
       "2015年",
       "2016年"
     ],
-    datasets: [{
-      label: "总人口数",
-      // backgroundColor: window.chartColors.red,
-      // borderColor: window.chartColors.red,
-      backgroundColor: "rgb(63,81,181)",
-      borderColor: "#3f51b5",
-      data: [
-        5524600,
-        5580500,
-        5627600,
-        5686200,
-        5704500,
-        5752000,
-        5800500,
-        5901000,
-        6035400,
-        6156100,
-        6435500,
-        6489300,
-        6543700,
-        6606500,
-        6665000,
-        6714300,
-        6744100,
-        6730800,
-        6783500,
-        6813200,
-        6857100,
-        6916300,
-        6957800,
-        6972800,
-        7024200,
-        7071600,
-        7150100,
-        7178900,
-        7229500,
-        7291300,
-        7336600
-      ],
-      fill: false
-    }]
+    datasets: [
+      {
+        label: "总人口数",
+        // backgroundColor: window.chartColors.red,
+        // borderColor: window.chartColors.red,
+        backgroundColor: "rgb(63,81,181)",
+        borderColor: "#3f51b5",
+        data: [
+          5524600,
+          5580500,
+          5627600,
+          5686200,
+          5704500,
+          5752000,
+          5800500,
+          5901000,
+          6035400,
+          6156100,
+          6435500,
+          6489300,
+          6543700,
+          6606500,
+          6665000,
+          6714300,
+          6744100,
+          6730800,
+          6783500,
+          6813200,
+          6857100,
+          6916300,
+          6957800,
+          6972800,
+          7024200,
+          7071600,
+          7150100,
+          7178900,
+          7229500,
+          7291300,
+          7336600
+        ],
+        fill: false
+      }
+    ]
   },
   options: {
     responsive: true,
@@ -419,23 +449,27 @@ let hkPopulation = {
       intersect: true
     },
     scales: {
-      xAxes: [{
-        display: true,
-        scaleLabel: {
-          display: false,
-          labelString: "Year"
+      xAxes: [
+        {
+          display: true,
+          scaleLabel: {
+            display: false,
+            labelString: "Year"
+          }
         }
-      }],
-      yAxes: [{
-        display: true,
-        scaleLabel: {
-          display: false,
-          labelString: "总人口数"
-        },
-        ticks: {
-          beginAtZero: true
+      ],
+      yAxes: [
+        {
+          display: true,
+          scaleLabel: {
+            display: false,
+            labelString: "总人口数"
+          },
+          ticks: {
+            beginAtZero: true
+          }
         }
-      }]
+      ]
     }
   }
 };
@@ -481,52 +515,54 @@ let hkFamily = {
       "2016年",
       "2017年"
     ],
-    datasets: [{
-      label: "平均人数",
-      // backgroundColor: window.chartColors.red,
-      // borderColor: window.chartColors.red,
-      backgroundColor: "rgb(63,81,181)",
-      borderColor: "#3f51b5",
-      data: [
-        3.9,
-        3.9,
-        3.7,
-        3.7,
-        3.6,
-        3.6,
-        3.6,
-        3.6,
-        3.5,
-        3.5,
-        3.4,
-        3.5,
-        3.4,
-        3.4,
-        3.4,
-        3.3,
-        3.3,
-        3.3,
-        3.3,
-        3.2,
-        3.2,
-        3.1,
-        3.1,
-        3,
-        3,
-        3,
-        3,
-        2.9,
-        2.9,
-        2.9,
-        2.9,
-        2.9,
-        2.9,
-        2.9,
-        2.8,
-        2.8
-      ],
-      fill: false
-    }]
+    datasets: [
+      {
+        label: "平均人数",
+        // backgroundColor: window.chartColors.red,
+        // borderColor: window.chartColors.red,
+        backgroundColor: "rgb(63,81,181)",
+        borderColor: "#3f51b5",
+        data: [
+          3.9,
+          3.9,
+          3.7,
+          3.7,
+          3.6,
+          3.6,
+          3.6,
+          3.6,
+          3.5,
+          3.5,
+          3.4,
+          3.5,
+          3.4,
+          3.4,
+          3.4,
+          3.3,
+          3.3,
+          3.3,
+          3.3,
+          3.2,
+          3.2,
+          3.1,
+          3.1,
+          3,
+          3,
+          3,
+          3,
+          2.9,
+          2.9,
+          2.9,
+          2.9,
+          2.9,
+          2.9,
+          2.9,
+          2.8,
+          2.8
+        ],
+        fill: false
+      }
+    ]
   },
   options: {
     responsive: true,
@@ -546,23 +582,27 @@ let hkFamily = {
       intersect: true
     },
     scales: {
-      xAxes: [{
-        display: true,
-        scaleLabel: {
-          display: false,
-          labelString: "Year"
+      xAxes: [
+        {
+          display: true,
+          scaleLabel: {
+            display: false,
+            labelString: "Year"
+          }
         }
-      }],
-      yAxes: [{
-        display: true,
-        scaleLabel: {
-          display: false,
-          labelString: "平均人数"
-        },
-        ticks: {
-          beginAtZero: true
+      ],
+      yAxes: [
+        {
+          display: true,
+          scaleLabel: {
+            display: false,
+            labelString: "平均人数"
+          },
+          ticks: {
+            beginAtZero: true
+          }
         }
-      }]
+      ]
     }
   }
 };
@@ -603,7 +643,8 @@ let unitAndPopulation = {
       "2016年",
       "2017年"
     ],
-    datasets: [{
+    datasets: [
+      {
         type: "line",
         label: "单位数目",
         backgroundColor: "rgb(253,134,36)",
@@ -704,14 +745,17 @@ let unitAndPopulation = {
       intersect: true
     },
     scales: {
-      xAxes: [{
-        display: true,
-        scaleLabel: {
-          display: false,
-          labelString: "Year"
+      xAxes: [
+        {
+          display: true,
+          scaleLabel: {
+            display: false,
+            labelString: "Year"
+          }
         }
-      }],
-      yAxes: [{
+      ],
+      yAxes: [
+        {
           type: "linear",
           position: "left",
           id: "y-axis-1",
@@ -766,9 +810,10 @@ let elder = {
       "2016年",
       "2017年"
     ],
-    datasets: [{
+    datasets: [
+      {
         type: "line",
-        label: "公屋非长者一人申请数量",
+        label: "公屋非长者一人申请个案数",
         backgroundColor: "rgb(253,134,36)",
         borderColor: "rgb(253,134,36)",
         data: [
@@ -843,14 +888,17 @@ let elder = {
       intersect: true
     },
     scales: {
-      xAxes: [{
-        display: true,
-        scaleLabel: {
-          display: false,
-          labelString: "Year"
+      xAxes: [
+        {
+          display: true,
+          scaleLabel: {
+            display: false,
+            labelString: "Year"
+          }
         }
-      }],
-      yAxes: [{
+      ],
+      yAxes: [
+        {
           type: "linear",
           position: "left",
           id: "y-axis-1",
@@ -903,33 +951,35 @@ let vacancy = {
       "2015年",
       "2016年"
     ],
-    datasets: [{
-      label: "公屋空置率",
-      // backgroundColor: window.chartColors.red,
-      // borderColor: window.chartColors.red,
-      backgroundColor: "rgb(63,81,181)",
-      borderColor: "#3f51b5",
-      data: [
-        3,
-        5.1,
-        1.6,
-        1.04,
-        1.3,
-        1.7,
-        1.4,
-        1.3,
-        2.1,
-        1.4,
-        1.2,
-        1.3,
-        1.3,
-        0.8,
-        0.5,
-        0.6,
-        0.5
-      ],
-      fill: false
-    }]
+    datasets: [
+      {
+        label: "公屋空置率（%）",
+        // backgroundColor: window.chartColors.red,
+        // borderColor: window.chartColors.red,
+        backgroundColor: "rgb(63,81,181)",
+        borderColor: "#3f51b5",
+        data: [
+          3,
+          5.1,
+          1.6,
+          1.04,
+          1.3,
+          1.7,
+          1.4,
+          1.3,
+          2.1,
+          1.4,
+          1.2,
+          1.3,
+          1.3,
+          0.8,
+          0.5,
+          0.6,
+          0.5
+        ],
+        fill: false
+      }
+    ]
   },
   options: {
     responsive: true,
@@ -949,23 +999,27 @@ let vacancy = {
       intersect: true
     },
     scales: {
-      xAxes: [{
-        display: true,
-        scaleLabel: {
-          display: false,
-          labelString: "Month"
+      xAxes: [
+        {
+          display: true,
+          scaleLabel: {
+            display: false,
+            labelString: "Month"
+          }
         }
-      }],
-      yAxes: [{
-        display: true,
-        scaleLabel: {
-          display: false,
-          labelString: "公屋空置率"
-        },
-        ticks: {
-          beginAtZero: true
+      ],
+      yAxes: [
+        {
+          display: true,
+          scaleLabel: {
+            display: false,
+            labelString: "公屋空置率"
+          },
+          ticks: {
+            beginAtZero: true
+          }
         }
-      }]
+      ]
     }
   }
 };
@@ -973,12 +1027,14 @@ let vacancy = {
 let satisfaction = {
   type: "pie",
   data: {
-    datasets: [{
-      data: [20, 75, 5],
-      backgroundColor: ["#3f51b5", "#ED7D31", "#A5A5A5"],
-      label: "满意度"
-    }],
-    labels: ["普通", "非常满意/满意", "非常不满意/不满意"]
+    datasets: [
+      {
+        data: [20, 75, 5],
+        backgroundColor: ["#3f51b5", "#ED7D31", "#A5A5A5"],
+        label: "满意度"
+      }
+    ],
+    labels: ["普通（%）", "非常满意/满意（%）", "非常不满意/不满意（%）"]
   },
   options: {
     responsive: true,
@@ -996,7 +1052,8 @@ let housingRantal = {
   type: "bar",
   data: {
     labels: ["香港岛", "九龙", "新界"],
-    datasets: [{
+    datasets: [
+      {
         label: "2007年",
         data: [48, 51, 43],
         backgroundColor: "#3F51B5",
@@ -1037,23 +1094,27 @@ let housingRantal = {
       intersect: true
     },
     scales: {
-      xAxes: [{
-        display: true,
-        scaleLabel: {
-          display: false,
-          labelString: "Year"
-        }
-      }],
-      yAxes: [{
-        display: true,
-        scaleLabel: {
+      xAxes: [
+        {
           display: true,
-          labelString: "租金（港元／平方米）"
-        },
-        ticks: {
-          beginAtZero: true
+          scaleLabel: {
+            display: false,
+            labelString: "Year"
+          }
         }
-      }]
+      ],
+      yAxes: [
+        {
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: "租金（港元／平方米）"
+          },
+          ticks: {
+            beginAtZero: true
+          }
+        }
+      ]
     }
   }
 };
@@ -1062,7 +1123,8 @@ let privateHousing = {
   type: "bar",
   data: {
     labels: ["香港岛", "九龙", "新界"],
-    datasets: [{
+    datasets: [
+      {
         label: "2007年",
         data: [218, 160, 111],
         backgroundColor: "#3F51B5",
@@ -1103,23 +1165,27 @@ let privateHousing = {
       intersect: true
     },
     scales: {
-      xAxes: [{
-        display: true,
-        scaleLabel: {
-          display: false,
-          labelString: "Year"
-        }
-      }],
-      yAxes: [{
-        display: true,
-        scaleLabel: {
+      xAxes: [
+        {
           display: true,
-          labelString: "租金（港元／平方米）"
-        },
-        ticks: {
-          beginAtZero: true
+          scaleLabel: {
+            display: false,
+            labelString: "Year"
+          }
         }
-      }]
+      ],
+      yAxes: [
+        {
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: "租金（港元／平方米）"
+          },
+          ticks: {
+            beginAtZero: true
+          }
+        }
+      ]
     }
   }
 };
@@ -1160,7 +1226,8 @@ let housingChange = {
       "2016年",
       "2017年"
     ],
-    datasets: [{
+    datasets: [
+      {
         label: "香港岛",
         backgroundColor: "#3F51B5",
         borderColor: "#3F51B5",
@@ -1375,23 +1442,27 @@ let housingChange = {
       intersect: true
     },
     scales: {
-      xAxes: [{
-        display: true,
-        scaleLabel: {
-          display: false,
-          labelString: "Month"
-        }
-      }],
-      yAxes: [{
-        display: true,
-        scaleLabel: {
+      xAxes: [
+        {
           display: true,
-          labelString: "单位数目"
-        },
-        ticks: {
-          beginAtZero: true
+          scaleLabel: {
+            display: false,
+            labelString: "Month"
+          }
         }
-      }]
+      ],
+      yAxes: [
+        {
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: "单位数目"
+          },
+          ticks: {
+            beginAtZero: true
+          }
+        }
+      ]
     }
   }
 };
@@ -1400,7 +1471,8 @@ let estate = {
   type: "bar",
   data: {
     labels: ["香港岛", "九龙", "新界"],
-    datasets: [{
+    datasets: [
+      {
         label: "2006年",
         data: [49327, 35446, 30553],
         backgroundColor: "#3F51B5",
@@ -1448,23 +1520,27 @@ let estate = {
       intersect: true
     },
     scales: {
-      xAxes: [{
-        display: true,
-        scaleLabel: {
-          display: false,
-          labelString: "Year"
-        }
-      }],
-      yAxes: [{
-        display: true,
-        scaleLabel: {
+      xAxes: [
+        {
           display: true,
-          labelString: "租金（港元／平方米）"
-        },
-        ticks: {
-          beginAtZero: true
+          scaleLabel: {
+            display: false,
+            labelString: "Year"
+          }
         }
-      }]
+      ],
+      yAxes: [
+        {
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: "租金（港元／平方米）"
+          },
+          ticks: {
+            beginAtZero: true
+          }
+        }
+      ]
     }
   }
 };
@@ -1473,7 +1549,8 @@ let ownership = {
   type: "bar",
   data: {
     labels: ["2014年", "2016年"],
-    datasets: [{
+    datasets: [
+      {
         label: "居屋供应数",
         data: [2160, 2600],
         backgroundColor: "#3F51B5",
@@ -1507,23 +1584,27 @@ let ownership = {
       intersect: true
     },
     scales: {
-      xAxes: [{
-        display: true,
-        scaleLabel: {
-          display: false,
-          labelString: "Year"
+      xAxes: [
+        {
+          display: true,
+          scaleLabel: {
+            display: false,
+            labelString: "Year"
+          }
         }
-      }],
-      yAxes: [{
-        display: true,
-        scaleLabel: {
-          display: false,
-          labelString: "租金（港元／平方米）"
-        },
-        ticks: {
-          beginAtZero: true
+      ],
+      yAxes: [
+        {
+          display: true,
+          scaleLabel: {
+            display: false,
+            labelString: "租金（港元／平方米）"
+          },
+          ticks: {
+            beginAtZero: true
+          }
         }
-      }]
+      ]
     }
   }
 };
