@@ -23,7 +23,7 @@
     <div class="md-layout md-alignment-center">
       <ImageCollection :images="collectionData.ninety" class="bottom-gap md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90"></ImageCollection>
     </div>
-    <TextUnit2 class="bottom-gap" title="21世纪" subtitle="" content=""></TextUnit2>
+    <TextUnit2 class="bottom-gap" title="二十一世纪" subtitle="" content=""></TextUnit2>
     <div class="md-layout md-alignment-center">
       <ImageCollection :images="collectionData.twentyFirst" class="bottom-gap md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90"></ImageCollection>
     </div>
