@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TopImage title="全港公屋地图" background="top-6"></TopImage>
+    <TopImage title="全港公屋地图" background="6"></TopImage>
     <div class="top-gap bottom-gap md-layout md-alignment-center">
       <div class="md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90">
         <Mapping></Mapping>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TopImage title="公屋60年" background="top-7"></TopImage>
+    <TopImage title="公屋60年" background="7"></TopImage>
     <TextUnit2 title="二十世纪50年代" subtitle="" content=""></TextUnit2>
 
     <div class="top-gap md-layout md-alignment-center">

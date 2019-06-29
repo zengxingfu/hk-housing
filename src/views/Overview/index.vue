@@ -1,6 +1,6 @@
 <template>
   <div class="page-content">
-    <TopImage title="舆论漩涡" background="top-1"></TopImage>
+    <TopImage title="舆论漩涡" background="1"></TopImage>
     <TextUnit class="bottom-gap-negative" title="" subtitle="" content="2017年，一篇骇人听闻的纪实新闻广泛传播。在这篇题为《蜗居香港：我还没死，就住进了棺材里》的报道中，香港深水埗区中狭小的劏房、“笼屋”、甚至“棺材房”以及20万蜗居于此的居民生活以纪实摄影的形式被呈现出来。"></TextUnit>
     <div class="bottom-gap-negative md-layout md-alignment-center">
       <ImageCard title="" subtitle="" class="md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90">

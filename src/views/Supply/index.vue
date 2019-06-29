@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TopImage title="供需迷局" background="top-3"></TopImage>
+    <TopImage title="供需迷局" background="3"></TopImage>
     <TextUnit title="六成香港贫穷人口并未住进公屋" subtitle="" content="从定义上来看，公屋是由香港政府主导，由香港房委会和房协向低收入人群提供租赁的保障性住房。那么，公屋的供应理应首先满足香港贫穷人口的住房需求。然而香港特区政府统计处发布的2016年统计年鉴显示，香港的贫穷人口中，仅有四成住进了租金低廉的公屋。六成贫穷人口并不在公屋的住房保障下。"></TextUnit>
     <div class="md-layout md-alignment-center">
       <Chart class="md-layout-item md-xlarge-size-60 md-large-size-70 md-medium-size-80 md-small-size-90" chartId="povertyHousing"></Chart>

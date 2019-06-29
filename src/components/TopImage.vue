@@ -1,16 +1,28 @@
 <template>
-    <div v-bind:class="background" class="top-image">
-        <div class="mask">
-            <!-- <h1>{{title}}</h1> -->
-            <span class="md-display-2">{{title}}</span>
-        </div>
+  <div v-bind:style="{'background-image': `url(${covers[background-1]})`}" class="top-image">
+    <div class="mask">
+      <!-- <h1>{{title}}</h1> -->
+      <span class="md-display-2">{{title}}</span>
     </div>
+  </div>
 </template>
 
 <script>
+import cover1 from "../assets/cover-images/1.jpg";
+import cover2 from "../assets/cover-images/2.jpg";
+import cover3 from "../assets/cover-images/3.jpg";
+import cover4 from "../assets/cover-images/4.jpg";
+import cover5 from "../assets/cover-images/5.jpg";
+import cover6 from "../assets/cover-images/6.jpg";
+import cover7 from "../assets/cover-images/7.jpg";
 export default {
   name: "TopImage",
-  props: ["title", "background"]
+  props: ["title", "background"],
+  data() {
+    return {
+      covers: [cover1, cover2, cover3, cover4, cover5, cover6, cover7]
+    };
+  }
 };
 </script>
 
@@ -18,35 +30,10 @@ export default {
 .top-image {
   width: 100%;
   height: 480px;
+  background-position: center;
+  background-size: contain;
 }
-.top-1 {
-  background: url(https://ww1.sinaimg.cn/large/005AlemFly1frp9qyaug9j30zk0dwn00.jpg)
-    center / contain;
-}
-.top-2 {
-  background: url(https://ww1.sinaimg.cn/large/005AlemFly1frpals4jnej30zk0dwq5g.jpg)
-    center / contain;
-}
-.top-3 {
-  background: url(https://ww1.sinaimg.cn/large/005AlemFly1frpam636o3j30zk0dwq40.jpg)
-    center / cover;
-}
-.top-4 {
-  background: url(https://ww1.sinaimg.cn/large/005AlemFly1frpamhqa1gj30zk0dwwh8.jpg)
-    center / contain;
-}
-.top-5 {
-  background: url(https://ww1.sinaimg.cn/large/005AlemFly1frpamn7gtoj30zk0dwaby.jpg)
-    center / contain;
-}
-.top-6 {
-  background: url(https://ww1.sinaimg.cn/large/005AlemFly1frpamsjznvj30zk0dwq5g.jpg)
-    center / cover;
-}
-.top-7 {
-  background: url(https://ws1.sinaimg.cn/large/76a6e147ly1fruojbqci7j20zk0dwqb4.jpg)
-    center / cover;
-}
+
 .top-image > .mask {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
