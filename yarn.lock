@@ -1470,11 +1470,11 @@ dom-serializer@0:
     domelementtype "~1.1.1"
     entities "~1.1.1"
 
-dom7@^2.0.6:
-  version "2.0.6"
-  resolved "http://registry.npm.taobao.org/dom7/download/dom7-2.0.6.tgz#ea9f187de68635783cd5985fde52842763632903"
+dom7@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/dom7/-/dom7-3.0.0.tgz#b861ce5d67a6becd7aaa3ad02942ff14b1240331"
   dependencies:
-    ssr-window "^1.0.0"
+    ssr-window "^3.0.0-alpha.1"
 
 domain-browser@^1.1.1:
   version "1.2.0"
@@ -4109,9 +4109,9 @@ sshpk@^1.7.0:
     jsbn "~0.1.0"
     tweetnacl "~0.14.0"
 
-ssr-window@^1.0.0:
-  version "1.0.0"
-  resolved "http://registry.npm.taobao.org/ssr-window/download/ssr-window-1.0.0.tgz#8ed1b6beaa0a371ba7e74d6515d584c3f1cf973c"
+ssr-window@^3.0.0, ssr-window@^3.0.0-alpha.1:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-3.0.0.tgz#fd5b82801638943e0cc704c4691801435af7ac37"
 
 stable@~0.1.6:
   version "0.1.8"
@@ -4284,12 +4284,12 @@ svgo@^1.0.5:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
-swiper@^4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-4.3.0.tgz#b5e1131ac473e4180353109749ff698b53f7e713"
+swiper@^6.5.1:
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-6.5.1.tgz#795630e45bbebb3b3b2945d55c22ffdcf5536c1b"
   dependencies:
-    dom7 "^2.0.6"
-    ssr-window "^1.0.0"
+    dom7 "^3.0.0"
+    ssr-window "^3.0.0"
 
 tar@^2.0.0:
   version "2.2.1"
